@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 // Local components
-import Loading from './components/Loading';
+import Loading from '../src/components/Loading';
 // Local content
-import Home from './content/pages/Home';
+import Home from '../src/content/pages/home';
 //-------------------------------------------------
 import {
   name as appName,
