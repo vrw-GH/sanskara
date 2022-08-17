@@ -1,66 +1,66 @@
-import React, { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 // Local components
-import Loading from "./components/Loading";
+import Loading from './components/Loading';
 // Local content
-import Home from "./content/pages/Home";
+import Home from './content/pages/Home';
 //-------------------------------------------------
 import {
   name as appName,
   suffix as appSuffix,
   version as appVer,
   info as appInfo,
-  homepage as appHomepage,
-} from "../package.json";
+  homepage as appHomepage
+} from '../package.json';
 
 const APPDATA = {
-  TITLE: appName || "New App Name",
+  TITLE: appName || 'New App Name',
   NAME:
     appName
-      .replace(/-/g, " ")
-      .replace(/(^\w{1})|(\s+\w{1})/g, (chr) => chr.toUpperCase()) || "",
+      .replace(/-/g, ' ')
+      .replace(/(^\w{1})|(\s+\w{1})/g, (chr) => chr.toUpperCase()) || '',
   PROJECT:
-    appName.replace(/-/g, " ").toUpperCase() + ` (${appSuffix})` ||
-    "Project Not Set",
-  VER: appVer || "0.1.0",
-  INFO: appInfo || "App info not Set",
+    appName.replace(/-/g, ' ').toUpperCase() + ` (${appSuffix})` ||
+    'Project Not Set',
+  VER: appVer || '0.1.0',
+  INFO: appInfo || 'App info not Set',
   // HOME: "/",
   //---------------------------------------
-  TITLEIMG: process.env.REACT_APP_IMG_TITLE || "/img-title.jpg",
-  FOOTERIMG: process.env.REACT_APP_IMG_FOOTER || "/img-footer.jpg",
+  TITLEIMG: process.env.REACT_APP_IMG_TITLE || '/img-title.jpg',
+  FOOTERIMG: process.env.REACT_APP_IMG_FOOTER || '/img-footer.jpg',
   //---------------------------------------
-  BACKEND: process.env.REACT_APP_BACKEND || "http://127.0.0.1:5000",
+  BACKEND: process.env.REACT_APP_BACKEND || 'http://127.0.0.1:5000',
   FRONTEND:
     process.env.REACT_APP_FRONTEND ||
-    (process.env.HOST || "https://127.0.0.1") +
-      ":" +
-      (process.env.PORT || "3000"),
-  DEVLEAD: process.env.REACT_APP_DEV_LEAD || "Victor Wright",
-  DEVTEAM: process.env.REACT_APP_DEV_TEAM || "",
-  EMAIL: process.env.REACT_APP_DEV_EMAIL || "victor.wright@outlook.de",
-  PHONE: process.env.REACT_APP_DEV_PHONE || "+49 176 4677 4278",
-  LOCATION: process.env.REACT_APP_DEV_ADDR || "83707, Germany",
-  MODE: process.env.REACT_APP_PROJECT_MODE || process.env.NODE_ENV || "Dev",
-  DESCRIPTION: process.env.REACT_APP_PROJECT_DESCRIPTION || "-in development-",
-  WEBSITE: appHomepage || process.env.HOST || "http://127.0.0.1",
-  HOST: process.env.HOST || appHomepage || "http://127.0.0.1",
+    (process.env.HOST || 'https://127.0.0.1') +
+      ':' +
+      (process.env.PORT || '3000'),
+  DEVLEAD: process.env.REACT_APP_DEV_LEAD || 'Victor Wright',
+  DEVTEAM: process.env.REACT_APP_DEV_TEAM || '',
+  EMAIL: process.env.REACT_APP_DEV_EMAIL || 'victor.wright@outlook.de',
+  PHONE: process.env.REACT_APP_DEV_PHONE || '+49 176 4677 4278',
+  LOCATION: process.env.REACT_APP_DEV_ADDR || '83707, Germany',
+  MODE: process.env.REACT_APP_PROJECT_MODE || process.env.NODE_ENV || 'Dev',
+  DESCRIPTION: process.env.REACT_APP_PROJECT_DESCRIPTION || '-in development-',
+  WEBSITE: appHomepage || process.env.HOST || 'http://127.0.0.1',
+  HOST: process.env.HOST || appHomepage || 'http://127.0.0.1',
   PORT: process.env.PORT || 5000,
-  ROOT: "/",
+  ROOT: '/'
 };
-document.title = "Welcome to " + APPDATA.NAME;
+document.title = 'Welcome to ' + APPDATA.NAME;
 //-------------------------------------------------
 
 function App() {
-  const [loading, setLoading] = useState("");
+  const [loading, setLoading] = useState('');
 
   useEffect(() => {}, [loading]); //  to re-render when any loading event occurs
 
   useEffect(() => {
-    setLoading("Loading ...");
-    setCurrentUser(JSON.parse(sessionStorage.getItem("currentUser")));
-    sessionStorage.setItem("APPDATA", JSON.stringify(APPDATA));
+    setLoading('Loading ...');
+    setCurrentUser(JSON.parse(sessionStorage.getItem('currentUser')));
+    sessionStorage.setItem('APPDATA', JSON.stringify(APPDATA));
     window.scrollTo(0, 0);
-    setLoading("");
+    setLoading('');
     return () => {
       sessionStorage.clear();
       localStorage.clear();
@@ -69,7 +69,7 @@ function App() {
 
   return (
     <>
-      {APPDATA.MODE.substring(0, 4).toUpperCase() !== "PROD" ? (
+      {APPDATA.MODE.substring(0, 4).toUpperCase() !== 'PROD' ? (
         <Marquee
           duration="20000"
           height="1rem"
@@ -82,7 +82,8 @@ function App() {
         </Marquee>
       ) : null}
       <Header APPDATA={APPDATA} />
-//      <NavbarTop
+      //{' '}
+      <NavbarTop
         APPDATA={APPDATA}
         handleSearchClick={handleSearchClick}
         handleClearQry={handleClearQry}
@@ -92,28 +93,24 @@ function App() {
         <Loading text={loading} />
       ) : (
         <>
-            <Routes>
-              <Route path="/" exact element={<Home APPDATA={APPDATA} />} />
-              <Route
-                path="/home"
-                exact
-                element={<Home APPDATA={APPDATA} />}
-              />
-              <Route
-                path="/*"
-                element={
-                  <div
-                    style={{
-                      margin: "8rem",
-                      color: "red",
-                      textAlign: "center",
-                    }}
-                  >
-                    🤫 Page Not Found!
-                  </div>
-                }
-              />
-            </Routes>
+          <Routes>
+            <Route path="/" exact element={<Home APPDATA={APPDATA} />} />
+            <Route path="/home" exact element={<Home APPDATA={APPDATA} />} />
+            <Route
+              path="/*"
+              element={
+                <div
+                  style={{
+                    margin: '8rem',
+                    color: 'red',
+                    textAlign: 'center'
+                  }}
+                >
+                  🤫 Page Not Found!
+                </div>
+              }
+            />
+          </Routes>
         </>
       )}
       <div>
