@@ -1,0 +1,115 @@
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  background-image: url("../assets/img/footer.jpg");
+  height: auto;
+  /* padding-bottom:3px;  */
+  min-height: 100px;
+  /* position: sticky; */
+  background-color: #e4e2d1;
+  margin:auto;
+  overflow: hidden;
+}
+
+ul li {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+.footer_info {
+  color: #f8edfe;
+  font-family: "Amble LtCn", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 1000;
+  opacity: 0.7;
+  list-style: none;
+  position: relative;
+  margin-top: 190px;
+  line-height: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  height: auto;
+  width: 45%;
+  border-radius: 0px 15px 15px 0px;
+  font-size: .8rem;
+  left: 0px;  
+}
+
+.footer_info::before {
+  position: absolute;
+  color: white;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #0a0046;
+  z-index: -1;
+  transform: scaleX(0.02);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+  /* border: rgba(180, 180, 180, 0.288) 0.3px solid; */
+  /*  */
+}
+
+.footer_info:hover:before,
+.footer_info:focus::before {
+  transform: scaleX(1);
+}
+
+.ul3 {
+  list-style: none;
+  position: relative;
+  line-height: 40px;
+  font-size: .8rem; 
+  margin-right: 30px;
+  margin-top: 300px;
+  margin-bottom: 40px;
+  display: flex;
+  color: #f3eea4;
+}
+
+.footer_info {
+  min-width: 20%;
+}
+.ul3 {
+  min-width: 90px;
+}
+
+.ul3 > li {
+  cursor: pointer;
+  padding: 0 4px;
+}
+.footer_info > li:hover, .ul3 > li:hover {
+  padding: 0 4px;
+}
+
+.footer-icons{
+  background-color: #191725;
+  padding: 11px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+
+.footer-icons:hover{
+  opacity: 0.7;
+  padding: 17px;
+  transition: 0.2s ease-in-out;
+}
+
+.facebook, .discord, .insta, .github{
+  color: white ;
+}
+
+.footer-email-link{
+  color: #f8edfe;
+  text-decoration: none;
+}

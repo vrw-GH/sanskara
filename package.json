@@ -1,50 +1,28 @@
 {
   "name": "sanskara",
   "version": "0.1.0",
-  "private": true,
+  "suffix": "victors-cra-app",
+  "info": "please update info",
+  "homepage": ".",
+  "private": false,
+  "type": "module",
+  "license": "ISC",
+  "description": "please update description",
+  "author": "Victor Wright",
+  "keywords": [
+    "react",
+    "sanskara",
+    "frontend"
+  ],
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-easy-marquee": "^1.2.4",
+    "react-router": "^6.1.1",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "^5.0.1",
+    "react-use": "^17.4.0"
   },
-  "scripts": {
-    "start": "react-scripts --openssl-legacy-provider  start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "//build": "react-scripts build",
-    "//start": "react-scripts start",
-    "dev": "react-scripts --openssl-legacy-provider start",
-    "serve": "serve -s build",
-    "npm-start": "npm run start",
-    "npm-build-serve": "npm run build && npm run serve"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:jsx-a11y/recommended"
-    ],
-    "plugins": [
-      "jsx-a11y"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "suffix": "victors-cra-app",
-  "info": "please update info",
-  "homepage": "https://",
-  "type": "module",
   "//dependencies": {
     "@contentful/rich-text-html-renderer": "^15.10.0",
     "@popperjs/core": "^2.11.0",
@@ -62,10 +40,7 @@
     "prop-types": "^15.8.1",
     "randomcolor": "^0.6.2",
     "react-bootstrap": "^2.0.2",
-    "react-easy-marquee": "^1.2.3",
     "react-icons": "^4.3.1",
-    "react-router": "^6.1.1",
-    "react-router-dom": "^6.0.2",
     "react-simple-hook-modal": "^1.1.0",
     "react-simple-maps": "^2.3.0",
     "react-slick": "^0.28.1",
@@ -74,29 +49,53 @@
     "serve": "^13.0.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.4.1",
-    "typescript": "^4.5.4",
     "web-vitals": "^1.1.2"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "typescript": "^4.7.4"
   },
-  "\\otherinfo": {
-    "description": "please update description",
-    "author": "Victor Wright",
-    "keywords": [
-      "react",
-      "frontend",
-      "backend"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"      
     ],
-    "private": false,
-    "license": "ISC",
+    "plugins": [
+      "jsx-a11y"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "//start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider  start",
+    "dev": "react-scripts --openssl-legacy-provider start",
+    "//build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "serve": "serve -s build",
+    "npm-start": "npm run start",
+    "npm-build-serve": "npm run build && npm run serve"
+  },
+  "\\repo": {
     "repository": {
       "type": "git",
-      "url": "https://github.com/vrw-GH/new-cra-app.git",
+      "url": "https://github.com/vrw-GH/???.git",
       "directory": "."
     },
     "bugs": {
-      "url": "https://github.com/vrw-GH/new-cra-app/issues"
+      "url": "https://github.com/vrw-GH/???/issues"
     }
   }
 }

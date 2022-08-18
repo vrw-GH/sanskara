@@ -1,0 +1,14 @@
+.header_container {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  background-image: url("../assets/img/header.jpg");  
+  /* justify-content: space-between; */
+  /* padding-bottom:3px;  */
+  min-height: 100px;  
+  /* position: sticky; */
+  background-color: #e4e2d1;
+  margin:auto;
+  overflow: hidden;
+}

@@ -1,17 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Marquee from 'react-easy-marquee';
 // Local components
-import Loading from '../src/components/Loading';
+import Loading from '../src/components/Loading.js';
 // Local content
-import Home from '../src/content/pages/home';
+import Header from './content/Header.js';
+import Footer from './content/Footer.js';
+import Home from './content/pages/Home.js';
+// Local styles
+import './content/styles/app.css';
 //-------------------------------------------------
-import {
-  name as appName,
-  suffix as appSuffix,
-  version as appVer,
-  info as appInfo,
-  homepage as appHomepage
-} from '../package.json';
+// import {
+//   name as appName,
+//   suffix as appSuffix,
+//   version as appVer,
+//   info as appInfo,
+//   homepage as appHomepage
+// } from '../package.json';
+
+const appName = '';
+const appSuffix = '';
+const appVer = '';
+const appInfo = '';
+const appHomepage = '.';
 
 const APPDATA = {
   TITLE: appName || 'New App Name',
@@ -57,8 +68,8 @@ function App() {
 
   useEffect(() => {
     setLoading('Loading ...');
-    setCurrentUser(JSON.parse(sessionStorage.getItem('currentUser')));
-    sessionStorage.setItem('APPDATA', JSON.stringify(APPDATA));
+    // setCurrentUser(JSON.parse(sessionStorage.getItem('currentUser')));
+    // sessionStorage.setItem('APPDATA', JSON.stringify(APPDATA));
     window.scrollTo(0, 0);
     setLoading('');
     return () => {
@@ -82,13 +93,7 @@ function App() {
         </Marquee>
       ) : null}
       <Header APPDATA={APPDATA} />
-      //{' '}
-      <NavbarTop
-        APPDATA={APPDATA}
-        handleSearchClick={handleSearchClick}
-        handleClearQry={handleClearQry}
-        currentUser={currentUser}
-      />
+      {/* <NavbarTop APPDATA={APPDATA} currentUser={currentUser} /> */}
       {loading ? (
         <Loading text={loading} />
       ) : (

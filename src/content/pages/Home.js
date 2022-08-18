@@ -4,105 +4,24 @@ import React from 'react';
 
 // Local content
 
+// Local styles
+import '../styles/home.css';
+
 //-------------------------------------------------
 
 function Home() {
   return (
     <>
-      <div
-        style={{
-          width: 1728,
-          height: 1117,
-          position: 'relative',
-          overflow: 'hidden'
-        }}
-      >
-        <div
-          style={{
-            width: 1728,
-            height: 1117,
-            position: 'absolute',
-            left: 0,
-            top: 0
-          }}
-        >
-          <div
-            style={{
-              width: 1728,
-              height: 1117,
-              position: 'absolute',
-              left: '-1px',
-              top: '-1px',
-              background: '#c79780'
-            }}
-          />
+      {/* <div className="home_body home_welcomemsg">WELCOME HOME 😇</div> */}
+      <div className="home_body">
+        <div className="menu_top_right">
+          <p>Contact </p>
+          <p>About &nbsp;</p>
+          <p>Home &nbsp;</p>
         </div>
-        <div
-          style={{
-            width: 494,
-            height: 50,
-            position: 'absolute',
-            left: 1110,
-            top: 27,
-            filter: 'drop-shadow(0px 4px 4px rgba(0,0,0,0.25))'
-          }}
-        >
-          <p
-            style={{
-              position: 'absolute',
-              left: 348,
-              top: 0,
-              fontSize: 40,
-              textAlign: 'left',
-              color: '#e1c2b6'
-            }}
-          >
-            Contact
-          </p>
-          <p
-            style={{
-              position: 'absolute',
-              left: 174,
-              top: 0,
-              fontSize: 40,
-              textAlign: 'center',
-              color: '#e1c2b6'
-            }}
-          >
-            About
-          </p>
-          <p
-            style={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              fontSize: 40,
-              textAlign: 'center',
-              color: '#e1c2b6'
-            }}
-          >
-            Home
-          </p>
-        </div>
-        <pre>
-          Failed to transform RECTANGLE home-video{'\n'}Error: Unsupported image
-          format
-        </pre>
-        <p
-          style={{
-            width: 643,
-            height: 144,
-            position: 'absolute',
-            left: 543,
-            top: 795,
-            fontSize: 100,
-            textAlign: 'center',
-            color: '#997b2c'
-          }}
-        >
-          Opening Soon
-        </p>
-        <svg
+        <img src="../assets/img/logo-sanskara.png" alt="logo-sankara" />
+        <p className="home_openingsoon">Opening Soon</p>
+        {/* <svg
           width={86}
           height={86}
           viewBox="0 0 86 86"
@@ -111,7 +30,7 @@ function Home() {
           style={{
             width: 86,
             height: 86,
-            position: 'absolute',
+            // position: 'absolute',
             left: 1407,
             top: 979
           }}
@@ -197,8 +116,8 @@ function Home() {
               />
             </filter>
           </defs>
-        </svg>
-        <svg
+        </svg> */}
+        {/* <svg
           width={95}
           height={89}
           viewBox="0 0 95 89"
@@ -210,6 +129,7 @@ function Home() {
             position: 'absolute',
             left: 1513,
             top: 972
+            // border: '1 solid black'
           }}
           preserveAspectRatio="none"
         >
@@ -296,20 +216,8 @@ function Home() {
               <rect width={91} height={85} fill="white" />
             </clippath>
           </defs>
-        </svg>
-        <img
-          src="home-logo.jpeg"
-          style={{
-            width: 358,
-            height: 274,
-            position: 'absolute',
-            left: 38,
-            top: 97,
-            objectFit: 'cover'
-          }}
-        />
+        </svg> */}
       </div>
-      ;
     </>
   );
 }
