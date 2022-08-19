@@ -3,6 +3,8 @@ import React from 'react';
 // Local components
 
 // Local content
+import video from '../assets/media/sanskara.mp4';
+import poster from '../assets/media/frame0601.png';
 
 // Local styles
 import '../styles/home.css';
@@ -12,14 +14,20 @@ import '../styles/home.css';
 function Home() {
   return (
     <>
-      {/* <div className="home_body home_welcomemsg">WELCOME HOME 😇</div> */}
       <div className="home_body">
-        <div className="menu_top_right">
-          <p>Contact </p>
-          <p>About &nbsp;</p>
-          <p>Home &nbsp;</p>
+        <div className="home_logo"></div>
+        <div className="home_video">
+          <video
+            controls={false}
+            autoPlay={true}
+            loop={true}
+            poster={poster}
+            // poster="../assets/media/frame0601.png"
+          >
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <img src="../assets/img/logo-sanskara.png" alt="logo-sankara" />
         <p className="home_openingsoon">Opening Soon</p>
         {/* <svg
           width={86}

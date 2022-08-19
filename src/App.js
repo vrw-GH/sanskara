@@ -87,8 +87,16 @@ function App() {
           background="red"
           pauseOnHover={true}
         >
-          <div style={{ fontSize: 10 }} title="Change MODE in process.env">
+          <div
+            style={{ fontSize: 10 }}
+            title="Change MODE in process.env"
+            onClick={(e) => {
+              e.target.parentElement.parentElement.parentElement.style.display =
+                'none';
+            }}
+          >
             App is in {APPDATA.MODE} Mode (this will not show in poduction mode)
+            - click here to hide
           </div>
         </Marquee>
       ) : null}

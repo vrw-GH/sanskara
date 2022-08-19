@@ -1,89 +1,122 @@
 import { useState } from 'react';
-// import {FaFacebook,FaGithub,FaInstagram,FaDiscord,FaLinkedin} from 'react-icons/fa';
-// import { GoMail } from 'react-icons/go';
+import { siGithub } from 'simple-icons';
+
+// import github_ico from 'https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg';
+
 import '../content/styles/footer.css';
 
 const Footer = ({ APPDATA }) => {
-  const [showImp, setShowImp] = useState(false);
+  const [leftUl, setLeftUl] = useState(false);
+  const [rightUl, setRightUl] = useState(false);
 
-  const toggleImp = () => {
-    setShowImp(!showImp);
-    setTimeout(() => {
-      setShowImp(false);
-    }, 10000);
+  const toggleLeftUl = () => {
+    setLeftUl(!leftUl);
   };
+  const toggleRightUl = () => {
+    setRightUl(!rightUl);
+  };
+  console.log(siGithub);
 
   return (
     <>
       <div className="footer_container">
-        <ul className="ul_info" style={{ overflowX: 'auto' }}>
-          <li>Development Team: {APPDATA.DEVTEAM}</li>
-          <li>
-            <small>Lead Developer: {APPDATA.DEVLEAD}</small>
-          </li>
-          <li title="Link opens your email app">
-            Contact: {''}
-            <a
-              href={`mailto:${APPDATA.EMAIL}?subject=Inquiry:%20${APPDATA.PROJECT}
-&body=I%20am%20interested%20in%20your%20project!`}
-              style={{ color: 'white' }}
-            >
-              {APPDATA.EMAIL}
-            </a>
-          </li>
-          {APPDATA.PHONE ? <li>Phone: {APPDATA.PHONE}</li> : null}
-          {APPDATA.LOCATION ? <li>{APPDATA.LOCATION}</li> : null}
-          <li
-            onClick={toggleImp}
-            style={{ cursor: 'pointer' }}
-            title="Opens a popup"
+        <div className="footer_left">
+          <span
+            onClick={toggleLeftUl}
+            onMouseOver={toggleLeftUl}
+            title="Open Developer Info"
+            style={{ display: leftUl ? 'none' : 'block' }}
           >
-            <small style={{ display: !showImp ? '' : 'none' }}>
-              <i>§Impressum</i>
-            </small>
-            <span
-              style={{ display: showImp ? '' : 'none', color: 'white' }}
-              title="click to hide"
-              // onClick={() => setShowImp(false)}
-            >
-              <u>
-                <strong>§Impressum</strong>
-              </u>
-              <h2 style={{ color: 'white' }}>{APPDATA.PROJECT}</h2>
-              <h5 style={{ color: 'white' }}>Address:</h5>
-              {APPDATA.LOCATION}
-              <h5 style={{ color: 'white' }}>Contact:</h5>
-              Contact: {APPDATA.PHONE}
+            <i>I n f o</i>
+          </span>
+          <ul
+            className="left_ul"
+            style={{
+              display: leftUl ? 'block' : 'none'
+            }}
+            title="click to hide"
+            onClick={toggleLeftUl}
+            onMouseLeave={() => {
+              setLeftUl(false);
+            }}
+          >
+            <u>
+              {/* <strong>§Impressum</strong> */}
+              <strong>Information</strong>
+            </u>
+            <li>
+              {!APPDATA.PROJECT ? null : <h2>{APPDATA.PROJECT}</h2>}
+              {!APPDATA.FRONTEND ? null : 'Website: ' + APPDATA.FRONTEND}
+            </li>
+            <li>
+              {!APPDATA.DEVTEAM ? null : 'Team: ' + APPDATA.DEVTEAM + '<br />'}
+              {!APPDATA.DEVLEAD ? null : (
+                <small>Lead Developer: {APPDATA.DEVLEAD}</small>
+              )}
+            </li>
+            <li>
+              Contact:
               <br />
-              Email: {APPDATA.EMAIL}
-              <br />
-              website: {APPDATA.FRONTEND}
-            </span>
-          </li>
-        </ul>
-
-        {/* ------ contact icons----------- */}
-        {/* <ul className="ul3">
-          <li>
-            <a
-              className="footer-icons"
-              href="https://www.facebook.com/abdullah.shabk"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaFacebook className="facebook" size="1.5em" />
-            </a>
-          </li>
-          <li>
-            <a
-              className="footer-icons"
-              href="https://github.com/vrw-GH/final-project-wd020"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub className="github" size="1.5em" />
-            </a>
-          </li>
+              <small>
+                {!APPDATA.EMAIL ? null : (
+                  <a
+                    href={`mailto:${APPDATA.EMAIL}?subject=Inquiry:%20${APPDATA.PROJECT}
+                    &body=I%20am%20interested%20in%20your%20project!`}
+                    style={{ color: 'white' }}
+                    title="Link opens in your email app"
+                  >
+                    Email: {APPDATA.EMAIL}
+                  </a>
+                )}
+                <br />
+                {!APPDATA.PHONE ? null : 'Phone: ' + APPDATA.PHONE}
+              </small>
+            </li>
+            {!APPDATA.LOCATION ? null : (
+              <li>
+                Address: <small>{APPDATA.LOCATION}</small>
+              </li>
+            )}
+          </ul>
+        </div>
+        <div className="footer_right">
+          <span
+            onClick={toggleRightUl}
+            onMouseOver={toggleRightUl}
+            title="Open Social Media"
+            style={{ display: rightUl ? 'none' : 'block' }}
+          >
+            <i>Social</i>
+          </span>
+          <ul
+            className="right_ul"
+            style={{
+              display: rightUl ? 'block' : 'none'
+            }}
+            onClick={toggleRightUl}
+            onMouseLeave={() => {
+              setRightUl(false);
+            }}
+          >
+            <u>
+              {/* <strong>§Impressum</strong> */}
+              <strong>Social Media</strong>
+            </u>
+            <li>
+              <a
+                className="footer-icons"
+                href="https://vrw-gh.github.io/vrw-GH/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  color="#CCCCCC"
+                  alt="github"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg"
+                />
+              </a>
+            </li>
+            {/*             
           <li>
             <a
               className="footer-icons"
@@ -124,8 +157,9 @@ const Footer = ({ APPDATA }) => {
             >
               <GoMail className="discord" size="1.5em" />
             </a>
-          </li>
-        </ul> */}
+          </li>*/}
+          </ul>
+        </div>
       </div>
     </>
   );
