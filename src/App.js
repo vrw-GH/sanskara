@@ -5,65 +5,66 @@ import Marquee from 'react-easy-marquee';
 
 // Local components
 import Loading from '../src/components/Loading.js';
-
-// Local content
+import PKGDATA from '../package.json';
 import Header from './content/Header.js';
 import Footer from './content/Footer.js';
 import Home from './content/pages/Home.js';
 import About from './content/pages/About.js';
 // import Contact from './content/pages/Contact.js';
 
+// Local content
+
 // Local styles
 import './content/styles/app.css';
 
 //-------------------------------------------------
-// import {
-//   name as appName,
-//   suffix as appSuffix,
-//   version as appVer,
-//   info as appInfo,
-//   homepage as appHomepage
-// } from '../package.json';
-
-const appName = '';
-const appSuffix = '';
-const appVer = '';
-const appInfo = '';
-const appHomepage = '.';
+const appName =
+  process.env.REACT_APP_PROJECT_NAME || PKGDATA.name || 'App NAME Not Set';
+const appSuffix =
+  process.env.REACT_APP_PROJECT_FLIGHT ||
+  PKGDATA.suffix ||
+  'App FLIGHT Not Set';
+const appVer = process.env.REACT_APP_PROJECT_VER || PKGDATA.version || '0.1.0';
+const appInfo =
+  process.env.REACT_APP_PROJECT_INFO || PKGDATA.info || 'App INFO Not Set';
+const appHomepage =
+  PKGDATA.homepage || process.env.REACT_APP_FRONTEND || 'App HOMEPAGE Not Set';
+const appAuthor =
+  process.env.REACT_APP_DEV_NAME || PKGDATA.author || 'Victor Wright';
+const appDescription =
+  process.env.REACT_APP_DESCRIPTION ||
+  PKGDATA.description ||
+  ' - to be described -';
 
 const APPDATA = {
-  TITLE: appName || 'New App Name',
-  NAME:
-    appName
-      .replace(/-/g, ' ')
-      .replace(/(^\w{1})|(\s+\w{1})/g, (chr) => chr.toUpperCase()) || '',
-  PROJECT:
-    appName.replace(/-/g, ' ').toUpperCase() + ` (${appSuffix})` ||
-    'Project Not Set',
-  VER: appVer || '0.1.0',
-  INFO: appInfo || 'App info not Set',
-  // HOME: "/",
+  TITLE: appName,
+  NAME: appName
+    .replace(/-/g, ' ')
+    .replace(/(^\w{1})|(\s+\w{1})/g, (chr) => chr.toUpperCase()),
+  PROJECT: appName.replace(/-/g, ' ').toUpperCase() + ' ' + appSuffix,
+  VER: appVer,
+  INFO: appInfo,
+  DESCRIPTION: appDescription,
+  DEVLEAD: appAuthor,
   //---------------------------------------
-  TITLEIMG: process.env.REACT_APP_IMG_TITLE || '/img-title.jpg',
-  FOOTERIMG: process.env.REACT_APP_IMG_FOOTER || '/img-footer.jpg',
-  //---------------------------------------
-  BACKEND: process.env.REACT_APP_BACKEND || 'http://127.0.0.1:5000',
+  DEVTEAM: process.env.REACT_APP_PROJECT_TEAM || '',
+  EMAIL: process.env.REACT_APP_DEV_EMAIL || 'victor.wright@outlook.de',
+  PHONE: process.env.REACT_APP_DEV_PHONE || '+49 176 4677 4278',
+  LOCATION: process.env.REACT_APP_DEV_ADDR || '83707, Germany',
+  HOMEIMG: process.env.REACT_APP_HOMEIMG || '',
+  HEADERIMG: process.env.REACT_APP_HEADERIMG || '',
+  FOOTERIMG: process.env.REACT_APP_FOOTERIMG || '',
   FRONTEND:
     process.env.REACT_APP_FRONTEND ||
     (process.env.HOST || 'https://127.0.0.1') +
       ':' +
       (process.env.PORT || '3000'),
-  DEVLEAD: process.env.REACT_APP_DEV_LEAD || 'Victor Wright',
-  DEVTEAM: process.env.REACT_APP_DEV_TEAM || '',
-  EMAIL: process.env.REACT_APP_DEV_EMAIL || 'victor.wright@outlook.de',
-  PHONE: process.env.REACT_APP_DEV_PHONE || '+49 176 4677 4278',
-  LOCATION: process.env.REACT_APP_DEV_ADDR || '83707, Germany',
+  BACKEND: process.env.REACT_APP_BACKEND || 'http://127.0.0.1:5000',
   MODE: process.env.REACT_APP_PROJECT_MODE || process.env.NODE_ENV || 'Dev',
-  DESCRIPTION: process.env.REACT_APP_PROJECT_DESCRIPTION || '-in development-',
-  WEBSITE: appHomepage || process.env.HOST || 'http://127.0.0.1',
+  WEBSITE: appHomepage,
+  ROOT: process.env.REACT_APP_PUBLIC_URL || '/',
   HOST: process.env.HOST || appHomepage || 'http://127.0.0.1',
-  PORT: process.env.PORT || 5000,
-  ROOT: '/'
+  PORT: process.env.PORT || 5000
 };
 document.title = 'Welcome to ' + APPDATA.NAME;
 //-------------------------------------------------

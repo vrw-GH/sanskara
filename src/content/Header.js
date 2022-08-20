@@ -14,7 +14,12 @@ import '../content/styles/menus.css';
 const Header = ({ APPDATA }) => {
   return (
     <>
-      <div className="header_container">
+      <div
+        className="header_container"
+        style={{
+          backgroundImage: 'url(' + APPDATA.HEADERIMG + ')'
+        }}
+      >
         <div className="menu_top_right">
           <Link to="/home" className="menu-link">
             Home

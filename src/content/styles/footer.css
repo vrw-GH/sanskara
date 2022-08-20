@@ -6,10 +6,10 @@
   justify-content: space-between;  
   align-items: center;  
   /* background-color: #e4e2d1; */
-  /* background-image: url("../assets/img/footer.jpg"); */
+  /* background-image: url("/footer.jpg");  */
   height: auto;
   min-height: 100px;
-  margin:auto;
+  margin:20px 0 0 0;
   /* position: sticky; */
   overflow: hidden;
   font-size: .8rem;

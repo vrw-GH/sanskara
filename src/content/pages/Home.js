@@ -11,10 +11,15 @@ import '../styles/home.css';
 
 //-------------------------------------------------
 
-function Home() {
+function Home({ APPDATA }) {
   return (
     <>
-      <div className="home_body">
+      <div
+        className="home_container"
+        style={{
+          backgroundImage: 'url(' + APPDATA.HOMEIMG + ')'
+        }}
+      >
         <div className="home_logo"></div>
         <div className="home_video">
           <video

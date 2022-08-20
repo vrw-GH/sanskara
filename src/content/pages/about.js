@@ -109,6 +109,7 @@ function About() {
           </p>
         </div>
         <img
+          alt="about-pic.png"
           src="about-pic.png"
           style={{
             width: 784,
@@ -259,6 +260,7 @@ function About() {
           }}
         >
           <img
+            alt="logo-pic.jpeg"
             src="logo-pic.jpeg"
             style={{
               width: 280,
