@@ -1,20 +1,27 @@
-import React from "react";
+// Libraries
 // import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import * as ReactBootStrap from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import * as ReactBootStrap from 'react-bootstrap';
+
+// Local components
+
+// Local content
 // import Background from "./Background.png";
-import newLogo from "../media/newLogo.png";
-// import newLogo2 from "./newLogo2.png"
-// import newLogo1 from "./newLogo1.png"
+import newLogo from '../media/newLogo.png';
+
+// Local styles
+import '../content/styles/menus.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+//-------------------------------------------------
 
 const NavbarTop = ({
   APPDATA,
   handleSearchClick,
   handleClearQry,
   // categories,
-  currentUser,
+  currentUser
 }) => {
   return (
     <>
@@ -37,10 +44,10 @@ const NavbarTop = ({
             title={`${APPDATA.NAME} - Home `}
           />
           &nbsp;{APPDATA.NAME}&nbsp;
-          <i style={{ fontSize: "0.6rem" }}>
-            {APPDATA.VER}{" "}
-            {APPDATA.MODE.substring(0, 4).toUpperCase() === "PROD"
-              ? ""
+          <i style={{ fontSize: '0.6rem' }}>
+            {APPDATA.VER}{' '}
+            {APPDATA.MODE.substring(0, 4).toUpperCase() === 'PROD'
+              ? ''
               : APPDATA.MODE}
           </i>
         </Navbar.Brand>
@@ -53,7 +60,7 @@ const NavbarTop = ({
               onClick={handleClearQry}
               // id="Link-sharing"
               id="nav-sharing"
-              className="nav-link"
+              className="menu-link"
             >
               Sharing
             </Link>
@@ -61,7 +68,7 @@ const NavbarTop = ({
               to="/recipes"
               onClick={handleClearQry}
               id="nav-recipes"
-              className="nav-link"
+              className="menu-link"
             >
               Recipes
             </Link>
@@ -79,9 +86,9 @@ const NavbarTop = ({
                     as={Link}
                     to="/myshare"
                     onClick={handleClearQry}
-                    style={{ color: "black" }}
+                    style={{ color: 'black' }}
                     id="nav-myshare"
-                    className="nav-link"
+                    className="menu-link"
                   >
                     My Sharing
                   </NavDropdown.Item>
@@ -89,9 +96,9 @@ const NavbarTop = ({
                     as={Link}
                     to="/mytitles"
                     onClick={handleClearQry}
-                    style={{ color: "black" }}
+                    style={{ color: 'black' }}
                     id="nav-mytitles"
-                    className="nav-link"
+                    className="menu-link"
                   >
                     My Recipes
                   </NavDropdown.Item>
@@ -99,9 +106,9 @@ const NavbarTop = ({
                     as={Link}
                     to="/newtitle"
                     onClick={handleClearQry}
-                    style={{ color: "black" }}
+                    style={{ color: 'black' }}
                     id="nav-newtitle"
-                    className="nav-link"
+                    className="menu-link"
                   >
                     New Recipe
                   </NavDropdown.Item>
@@ -129,9 +136,9 @@ const NavbarTop = ({
                     as={Link}
                     to="/profile"
                     onClick={handleClearQry}
-                    style={{ color: "black" }}
+                    style={{ color: 'black' }}
                     id="nav-profile"
-                    className="nav-link"
+                    className="menu-link"
                   >
                     Profile
                   </NavDropdown.Item>
@@ -140,7 +147,7 @@ const NavbarTop = ({
                     to="/login"
                     onClick={handleClearQry}
                     id="nav-login"
-                    className="nav-link"
+                    className="menu-link"
                   >
                     Logout
                   </NavDropdown.Item>
@@ -152,7 +159,7 @@ const NavbarTop = ({
                   to="/login"
                   onClick={handleClearQry}
                   id="nav-login"
-                  className="nav-link"
+                  className="menu-link"
                 >
                   Login
                 </Link>
@@ -163,8 +170,8 @@ const NavbarTop = ({
               onClick={handleClearQry}
               title="About Us"
               id="nav-about"
-              className="nav-link"
-              style={{ marginLeft: "10px" }}
+              className="menu-link"
+              style={{ marginLeft: '10px' }}
             >
               About
             </Link>

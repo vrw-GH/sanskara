@@ -1,0 +1,14 @@
+.icons {
+   stroke: #e1c2b6;    /* for svg icons*/
+   width: 2rem;        /* for svg icons*/
+   fill: rgba(255, 255, 255, 0.396);       /* for svg icons*/ 
+   opacity: 1;
+   transform: rotate(0deg);
+}
+.icons:hover{
+   opacity: 0.8;
+   stroke: white;
+   fill: white;
+   /* transform: rotate(-45deg);   */
+   transition: 0.2s ease-in-out;
+ }

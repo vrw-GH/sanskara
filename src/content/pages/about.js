@@ -1,8 +1,10 @@
-import React from 'react';
+// Libraries
 
 // Local components
 
 // Local content
+
+// Local styles
 
 //-------------------------------------------------
 

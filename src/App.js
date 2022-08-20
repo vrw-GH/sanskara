@@ -1,14 +1,21 @@
+// Libraries
 import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Marquee from 'react-easy-marquee';
+
 // Local components
 import Loading from '../src/components/Loading.js';
+
 // Local content
 import Header from './content/Header.js';
 import Footer from './content/Footer.js';
 import Home from './content/pages/Home.js';
+import About from './content/pages/About.js';
+// import Contact from './content/pages/Contact.js';
+
 // Local styles
 import './content/styles/app.css';
+
 //-------------------------------------------------
 // import {
 //   name as appName,
@@ -109,6 +116,8 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home APPDATA={APPDATA} />} />
             <Route path="/home" exact element={<Home APPDATA={APPDATA} />} />
+            <Route path="/home" exact element={<About APPDATA={APPDATA} />} />
+            {/* <Route path="/home" exact element={<Contact APPDATA={APPDATA} />} /> */}
             <Route
               path="/*"
               element={

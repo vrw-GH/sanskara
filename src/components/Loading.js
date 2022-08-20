@@ -1,5 +1,14 @@
+// Libraries
 import { useNavigate } from 'react-router';
+
+// Local components
+
+// Local content
+
+// Local styles
 import '../content/styles/loading.css';
+
+//-------------------------------------------------
 
 const Loading = ({ text, back }) => {
   back = isNaN(back) ? Number.back : back;

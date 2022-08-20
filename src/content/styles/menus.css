@@ -1,0 +1,10 @@
+.menu-link {
+   opacity: 0.7;
+}
+.menu-link:hover {
+   text-decoration: none;
+   opacity: 0.8;
+   color: white;
+   /* transform: rotate(-45deg);   */
+   transition: 0.2s ease-in-out;
+ }

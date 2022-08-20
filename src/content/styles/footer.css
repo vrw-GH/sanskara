@@ -9,16 +9,15 @@
   /* background-image: url("../assets/img/footer.jpg"); */
   height: auto;
   min-height: 100px;
-  /* padding-bottom:3px;  */
   margin:auto;
   /* position: sticky; */
   overflow: hidden;
   font-size: .8rem;
 }
 
-.footer_left, .footer_right {  
+.footer_left {
   position: fixed;
-  bottom: 23px;
+  bottom: 40px;
   opacity: 0.1;
   display: flex;
   flex-direction: row;
@@ -27,12 +26,28 @@
   cursor: pointer;
 }
 .footer_left {  
-  left: 28px;
-  justify-content: flex-start;
+  left: 5px;
+  justify-content: flex-start;  
 }
+.footer_left span {  
+  transform: rotate(-90deg);
+}
+
 .footer_right {
-  right: 28px;
-  justify-content: flex-end; 
+  position: fixed;
+  padding: 20px;
+  bottom: 20px;
+  opacity: 0.8;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  cursor: pointer;  right: 25px;
+  justify-content: space-between;
+}
+.footer_right span {  
+  transform: rotate(90deg);
 }
 .footer_left:hover, .footer_right:hover {
   opacity: 1;
@@ -55,9 +70,10 @@
   bottom: 0;
   z-index: 99;
   animation-name: grow;
+  /* animation-delay: 1s; */
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  /* transition: display 1s; */
+  /* transition: display 1s; */  
 }
 @keyframes grow {
   from {width: 0;}
@@ -66,7 +82,8 @@
 
 .left_ul  {
   border-radius: 15px 15px 30% 0;
-  left: 10px;   
+  left: 10px;
+  text-align: right;  
 }
 .left_ul > li {
   border: 1px solid white;
@@ -81,21 +98,21 @@
 
 .right_ul  {
   border-radius: 15px 15px 0 30%;
-  right: 10px;
+  right: 10px;  
+  text-align: left;
+}
+.right_ul > li {
+  border: 1px solid white;
+  border-radius: 5px 5px 5px 30%;;
+  padding: 10px;
+  text-align: right;
 }
 
-.footer-icons{
-  background-color: #191725;
-  height: 32px;
-  width: 32px;  
-  padding: 11px;
-  padding-bottom: 15px;
-  border-radius: 30px;
+.right_ul > li > a {
+  background-color: #a69fcc; 
+  height: 2rem;
+  width: 2rem;
+  padding: 0.8rem;  
+  border-radius: 50px 2px 50px 3px;
   opacity: 0.8;
-  transition: 0.2s ease-in-out;
-}
-.footer-icons:hover{
-  opacity: 0.7;
-  padding: 17px;
-  transition: 0.2s ease-in-out;
 }

@@ -1,9 +1,15 @@
+// Libraries
 import { useState } from 'react';
-import { siGithub } from 'simple-icons';
 
-// import github_ico from 'https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg';
+// Local components
+import { IconInstagram, IconYoutube } from '../components/Icons.js';
 
+// Local content
+
+// Local styles
 import '../content/styles/footer.css';
+
+//-------------------------------------------------
 
 const Footer = ({ APPDATA }) => {
   const [leftUl, setLeftUl] = useState(false);
@@ -15,7 +21,6 @@ const Footer = ({ APPDATA }) => {
   const toggleRightUl = () => {
     setRightUl(!rightUl);
   };
-  console.log(siGithub);
 
   return (
     <>
@@ -80,85 +85,15 @@ const Footer = ({ APPDATA }) => {
           </ul>
         </div>
         <div className="footer_right">
-          <span
-            onClick={toggleRightUl}
-            onMouseOver={toggleRightUl}
-            title="Open Social Media"
-            style={{ display: rightUl ? 'none' : 'block' }}
+          <a href="https://www.instagram.com/sanskaradxb" rel="noreferrer">
+            <IconInstagram />
+          </a>
+          <a
+            href="https://www.youtube.com/c/illuminationsdubaiME"
+            rel="noreferrer"
           >
-            <i>Social</i>
-          </span>
-          <ul
-            className="right_ul"
-            style={{
-              display: rightUl ? 'block' : 'none'
-            }}
-            onClick={toggleRightUl}
-            onMouseLeave={() => {
-              setRightUl(false);
-            }}
-          >
-            <u>
-              {/* <strong>§Impressum</strong> */}
-              <strong>Social Media</strong>
-            </u>
-            <li>
-              <a
-                className="footer-icons"
-                href="https://vrw-gh.github.io/vrw-GH/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  color="#CCCCCC"
-                  alt="github"
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg"
-                />
-              </a>
-            </li>
-            {/*             
-          <li>
-            <a
-              className="footer-icons"
-              href="https://www.instagram.com/a.shabk/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram className="insta" size="1.5em" />
-            </a>
-          </li>
-          <li>
-            <a
-              className="footer-icons"
-              href="https://www.linkedin.com/in/abdullah-al-shabk"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin className="insta" size="1.5em" />
-            </a>
-          </li>
-          <li>
-            <a
-              className="footer-icons"
-              href="https://discord.gg/6rm4j2S2Qq"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaDiscord className="discord" size="1.5em" />
-            </a>
-          </li>
-          <li>
-            <a
-              className="footer-icons"
-              href={`mailto:${APPDATA.EMAIL}?subject=Inquiry:%20${APPDATA.PROJECT}
-              &body=I%20am%20interested%20in%20your%20project!`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GoMail className="discord" size="1.5em" />
-            </a>
-          </li>*/}
-          </ul>
+            <IconYoutube />
+          </a>
         </div>
       </div>
     </>
