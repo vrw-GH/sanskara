@@ -58,7 +58,11 @@ const Footer = ({ APPDATA }) => {
               )}
               {!APPDATA.INFO ? null : <i>{APPDATA.INFO}</i>}
               {!APPDATA.DESCRIPTION ? null : <h4>{APPDATA.DESCRIPTION}</h4>}
-              {!APPDATA.FRONTEND ? null : 'Website: ' + APPDATA.FRONTEND}
+              {!APPDATA.WEBSITE ? null : (
+                <a href={APPDATA.WEBSITE} style={{ color: 'white' }}>
+                  Website: {APPDATA.WEBSITE}
+                </a>
+              )}
             </li>
             <li>
               <>
@@ -86,7 +90,7 @@ const Footer = ({ APPDATA }) => {
                   <br />
                   {!APPDATA.PHONE ? null : 'Phone: ' + APPDATA.PHONE}
                   <br />
-                  {!APPDATA.LOCATION ? null : 'Address: ' + APPDATA.LOCATION}
+                  {!APPDATA.ADDRESS ? null : 'Address: ' + APPDATA.ADDRESS}
                 </small>
               </>
             </li>

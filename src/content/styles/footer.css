@@ -1,118 +1,136 @@
 .footer_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;  
-  align-items: center;  
+  display            : flex;
+  flex-direction     : row;
+  flex-wrap          : wrap;
+  align-content      : center;
+  justify-content    : space-between;
+  align-items        : center;
   /* background-color: #e4e2d1; */
   /* background-image: url("/footer.jpg");  */
-  height: auto;
-  min-height: 100px;
-  margin:20px 0 0 0;
-  /* position: sticky; */
-  overflow: hidden;
-  font-size: .8rem;
+  height             : auto;
+  min-height         : 100px;
+  margin             : 20px 0 0 0;
+  /* position        : sticky; */
+  overflow           : hidden;
+  font-size          : 0.8rem;
 }
 
 .footer_left {
-  position: fixed;
-  bottom: 40px;
-  opacity: 0.1;
-  display: flex;
+  position      : fixed;
+  bottom        : 40px;
+  opacity       : 0.1;
+  display       : flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  cursor: pointer;
+  flex-wrap     : wrap;
+  align-content : center;
+  cursor        : pointer;
 }
-.footer_left {  
-  left: 5px;
-  justify-content: flex-start;  
+
+.footer_left {
+  left           : 5px;
+  justify-content: flex-start;
 }
-.footer_left span {  
+
+.footer_left span {
   transform: rotate(-90deg);
 }
 
 .footer_right {
-  position: fixed;
-  padding: 20px;
-  bottom: 20px;
-  opacity: 0.8;
-  width: 80px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  cursor: pointer;  right: 25px;
+  position       : fixed;
+  padding        : 20px;
+  bottom         : 20px;
+  opacity        : 0.8;
+  width          : 80px;
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : wrap;
+  align-content  : center;
+  cursor         : pointer;
+  right          : 25px;
   justify-content: space-between;
 }
-.footer_right span {  
+
+.footer_right span {
   transform: rotate(90deg);
 }
-.footer_left:hover, .footer_right:hover {
+
+.footer_left:hover,
+.footer_right:hover {
   opacity: 1;
 }
 
-.left_ul, .right_ul {
-  background-color: #291c72;
-  color: #f8edfe; 
-  opacity: 0.7;
-  display: none;
-  cursor: auto;
-  list-style: none;  
-  line-height: 20px;
-  overflow: hidden;
-  padding: 10px;  
-  height: auto;
-  width: 30%;
-  border: 3px solid #f1f1f1;
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
-  animation-name: grow;
-  /* animation-delay: 1s; */
-  animation-duration: 1s;
+.left_ul,
+.right_ul {
+  background-color   : #291c72;
+  color              : #f8edfe;
+  opacity            : 0.7;
+  display            : none;
+  cursor             : auto;
+  list-style         : none;
+  line-height        : 20px;
+  overflow           : hidden;
+  padding            : 10px;
+  height             : auto;
+  width              : 30%;
+  min-width          : min-content;
+  max-width          : max-content;
+  border             : 3px solid #f1f1f1;
+  position           : fixed;
+  bottom             : 0;
+  z-index            : 99;
+  animation-name     : grow;
+  /* animation-delay : 1s; */
+  animation-duration : 1s;
   animation-fill-mode: forwards;
-  /* transition: display 1s; */  
+  /* transition      : display 1s; */
 }
+
 @keyframes grow {
-  from {width: 0;}
-  to {width: 30%;}
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 30%;
+  }
 }
 
-.left_ul  {
+.left_ul {
   border-radius: 15px 15px 30% 0;
-  left: 10px;
-  text-align: right;  
+  left         : 10px;
+  text-align   : right;
 }
-.left_ul > li {
-  border: 1px solid white;
+
+.left_ul>li {
+  border       : 1px solid white;
   border-radius: 5px;
-  padding: 10px;
-  text-align: left;
+  padding      : 10px;
+  text-align   : left;
 }
-.left_ul > li:hover {
+
+.left_ul>li:hover {
   background-color: #191725;
-  transition: 0.2s ease-in-out;
+  transition      : 0.2s ease-in-out;
 }
 
-.right_ul  {
+.right_ul {
   border-radius: 15px 15px 0 30%;
-  right: 10px;  
-  text-align: left;
-}
-.right_ul > li {
-  border: 1px solid white;
-  border-radius: 5px 5px 5px 30%;;
-  padding: 10px;
-  text-align: right;
+  right        : 10px;
+  text-align   : left;
 }
 
-.right_ul > li > a {
-  background-color: #a69fcc; 
-  height: 2rem;
-  width: 2rem;
-  padding: 0.8rem;  
-  border-radius: 50px 2px 50px 3px;
-  opacity: 0.8;
+.right_ul>li {
+  border       : 1px solid white;
+  border-radius: 5px 5px 5px 30%;
+  padding      : 10px;
+  text-align   : right;
+}
+
+.right_ul>li>a {
+  background-color: #a69fcc;
+  height          : 2rem;
+  width           : 2rem;
+  padding         : 0.8rem;
+  border-radius   : 50px 2px 50px 3px;
+  opacity         : 0.8;
 }

@@ -1,0 +1,59 @@
+.about_container {
+  background-color : #dddddd80;
+  border-radius    : 10px;
+  box-shadow       : 2px 2px 20px 10px #dddddd80;
+  margin           : 20px;
+  width            : calc(100% - 40px);
+  display          : inline-flex;
+  /* flex-direction: row;   */
+  flex-wrap        : wrap;
+  flex-basis       : content;
+  /* align-items   : center;  */
+  justify-content  : center;
+}
+
+.about_left {
+  display  : block;
+  max-width: calc(100vw/12*2 + 100vw/12*1);
+  padding  : 20px;
+
+  /* background-color: grey; */
+}
+
+.about_logo {
+  width              : 50%;
+  min-width          : 150px;
+  max-width          : 300px;
+  height             : auto;
+  min-height         : 120px;
+  position           : relative;
+  top                : 10px;
+  left               : 10px;
+  object-fit         : cover;
+  /* background-color: rgb(46, 179, 179);     ! to change */
+}
+
+.about_left h1 {
+  font-size : 3rem;
+  margin    : 2rem 0 1rem;
+  text-align: left;
+  color     : #ffffff;
+}
+
+#about_description {
+  font-size : 1.5rem;
+  text-align: left;
+  color     : #564141;
+}
+
+.about_pic {
+  max-width    : calc(100vw/12*5 + 100vw/12*1);
+  min-width    : 100px;
+  /* max-height:100%;
+  max-width    :100%; */
+  width        : max-content;
+  height       : auto;
+  padding      : 20px;
+  /* position  : relative;   */
+  object-fit   : cover;
+}

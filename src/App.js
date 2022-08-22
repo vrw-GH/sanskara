@@ -10,7 +10,7 @@ import Header from './content/Header.js';
 import Footer from './content/Footer.js';
 import Home from './content/pages/Home.js';
 import About from './content/pages/About.js';
-// import Contact from './content/pages/Contact.js';
+import Contact from './content/pages/Contact.js';
 
 // Local content
 
@@ -18,6 +18,7 @@ import About from './content/pages/About.js';
 import './content/styles/app.css';
 
 //-------------------------------------------------
+
 const appName =
   process.env.REACT_APP_PROJECT_NAME || PKGDATA.name || 'App NAME Not Set';
 const appSuffix =
@@ -45,12 +46,13 @@ const APPDATA = {
   VER: appVer,
   INFO: appInfo,
   DESCRIPTION: appDescription,
+  WEBSITE: appHomepage,
   DEVLEAD: appAuthor,
   //---------------------------------------
   DEVTEAM: process.env.REACT_APP_PROJECT_TEAM || '',
   EMAIL: process.env.REACT_APP_DEV_EMAIL || 'victor.wright@outlook.de',
   PHONE: process.env.REACT_APP_DEV_PHONE || '+49 176 4677 4278',
-  LOCATION: process.env.REACT_APP_DEV_ADDR || '83707, Germany',
+  ADDRESS: process.env.REACT_APP_DEV_ADDR || '83707, Germany',
   HOMEIMG: process.env.REACT_APP_HOMEIMG || '',
   HEADERIMG: process.env.REACT_APP_HEADERIMG || '',
   FOOTERIMG: process.env.REACT_APP_FOOTERIMG || '',
@@ -61,11 +63,11 @@ const APPDATA = {
       (process.env.PORT || '3000'),
   BACKEND: process.env.REACT_APP_BACKEND || 'http://127.0.0.1:5000',
   MODE: process.env.REACT_APP_PROJECT_MODE || process.env.NODE_ENV || 'Dev',
-  WEBSITE: appHomepage,
   ROOT: process.env.REACT_APP_PUBLIC_URL || '/',
   HOST: process.env.HOST || appHomepage || 'http://127.0.0.1',
   PORT: process.env.PORT || 5000
 };
+
 document.title = 'Welcome to ' + APPDATA.NAME;
 //-------------------------------------------------
 
@@ -117,8 +119,12 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home APPDATA={APPDATA} />} />
             <Route path="/home" exact element={<Home APPDATA={APPDATA} />} />
-            <Route path="/home" exact element={<About APPDATA={APPDATA} />} />
-            {/* <Route path="/home" exact element={<Contact APPDATA={APPDATA} />} /> */}
+            <Route path="/about" exact element={<About APPDATA={APPDATA} />} />
+            <Route
+              path="/contact"
+              exact
+              element={<Contact APPDATA={APPDATA} />}
+            />
             <Route
               path="/*"
               element={

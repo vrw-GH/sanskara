@@ -1,0 +1,42 @@
+.buttons {
+  width          : max-content;
+  height         : auto;
+  right          : 0px;
+  margin         : 14px 0 0 10px;
+  padding        : 5px 10px;
+  position       : relative;
+  float          : right;
+  display        : flex;
+  flex-direction : row;
+  /* flex-wrap   : nowrap; */
+  align-content  : center;
+  justify-content: flex-end;
+  align-items    : center;
+  border         : none;
+  border-radius  : 15px;
+  /* background  : #ccb039; */
+  opacity        : 0.7;
+  text-align     : center;
+  font-size      : 1.5rem;
+  color          : white;
+  text-decoration: none;
+  cursor         : pointer;
+}
+
+.buttons:hover {
+  opacity   : 0.9;
+  box-shadow: 2px 2px 20px 10px #dddddd80;
+}
+
+.primary {
+  background: #ccb039;
+}
+
+.secondary {
+  background: #d2c485;
+}
+
+.location {
+  background: #ccb039;
+  padding   : 30px;
+}

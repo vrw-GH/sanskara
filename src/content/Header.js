@@ -29,7 +29,7 @@ const Header = ({ APPDATA }) => {
             About
           </Link>{' '}
           &nbsp;
-          <Link to="/about" className="menu-link">
+          <Link to="/contact" className="menu-link">
             Contact
           </Link>
         </div>

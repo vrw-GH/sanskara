@@ -34,7 +34,8 @@ function Home({ APPDATA }) {
           </video>
         </div>
         <p className="home_openingsoon">Opening Soon</p>
-        {/* <svg
+        <div>
+          {/* <svg
           width={86}
           height={86}
           viewBox="0 0 86 86"
@@ -130,7 +131,7 @@ function Home({ APPDATA }) {
             </filter>
           </defs>
         </svg> */}
-        {/* <svg
+          {/* <svg
           width={95}
           height={89}
           viewBox="0 0 95 89"
@@ -230,6 +231,7 @@ function Home({ APPDATA }) {
             </clippath>
           </defs>
         </svg> */}
+        </div>
       </div>
     </>
   );
