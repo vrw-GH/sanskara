@@ -16,8 +16,8 @@ import '../styles/buttons.css';
 
 function Contact({ APPDATA }) {
   const formSubmit = (e) => {
-    e.target.preventdefault();
     console.log(e);
+    e.target.preventdefault();
   };
   return (
     <>
@@ -30,27 +30,39 @@ function Contact({ APPDATA }) {
           <div id="contact_description">
             <form onSubmit={(e) => formSubmit}>
               <p>
-                First Name:
-                <input id="name-first" label="name-first" type="text"></input>
+                <input
+                  id="name-first"
+                  label="name-first"
+                  placeholder="First Name"
+                  type="text"
+                ></input>
               </p>
               <p>
-                Last Name:
-                <input id="name-last" label="name-last" type="text"></input>
+                <input
+                  id="name-last"
+                  label="name-last"
+                  placeholder="Last Name"
+                  type="text"
+                ></input>
               </p>
               <p>
-                Email Address:
-                <input id="email" label="email" type="email"></input>
+                <input
+                  id="email"
+                  label="email"
+                  placeholder="Email Address"
+                  type="email"
+                ></input>
               </p>
               <p>
-                Contact Number:
-                <input id="contact" label="contact" type="text"></input>
+                <input
+                  id="contact"
+                  label="contact"
+                  placeholder="Contact Number"
+                  type="text"
+                ></input>
               </p>
-              <button type="cancel" className="buttons secondary">
-                Reset
-              </button>
-              <button className="buttons primary" type="submit">
-                Submit
-              </button>
+              <button className="buttons secondary">Reset</button>
+              <button className="buttons primary">Submit</button>
             </form>
           </div>
         </div>
@@ -66,18 +78,28 @@ function Contact({ APPDATA }) {
             <span>
               <p>
                 • Opening Hours: 8 am – 11 pm
-                <br />• Contact Number: (MOBILE) +971 5077 427 56
-                <br />• Email Address: connect@sanskara.com
-                <br /> • Address:
+                <br />• Contact Number: (MOBILE) +971507742756
+                <br />• Email Address:&nbsp;
+                <a
+                  href={`mailto:connect@sanskara.com?subject=Inquiry:%20${APPDATA.PROJECT}
+                    &body=I%20am%20interested%20in%20your%20project!`}
+                  style={{ color: 'white' }}
+                  title="Link opens in your email app"
+                >
+                  connect@sanskara.com
+                </a>
+                <br />• Address:
               </p>
-              <button className="buttons location" type="submit">
-                <img
-                  height="48px"
-                  src={location_icon}
-                  alt="location_icon"
-                ></img>
-              </button>
-              <span>
+              <div className="address">
+                <a href="https://goo.gl/maps/VtddMzD22ro1DAyU8">
+                  <button className="buttons location">
+                    <img
+                      height="48px"
+                      src={location_icon}
+                      alt="location_icon"
+                    ></img>
+                  </button>
+                </a>
                 <p>
                   Villa 1, Street 12A, Plot 357 - 546,
                   <br />
@@ -85,7 +107,7 @@ function Contact({ APPDATA }) {
                   <br />
                   Dubai, UAE
                 </p>
-              </span>
+              </div>
             </span>
           </div>
         </div>

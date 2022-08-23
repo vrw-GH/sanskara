@@ -21,6 +21,7 @@
     "react-router": "^6.1.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "^5.0.1",
+    "react-simple-image-slider": "^2.4.1",
     "react-use": "^17.4.0",
     "simple-icons": "^7.7.0"
   },

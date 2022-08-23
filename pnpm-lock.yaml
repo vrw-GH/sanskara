@@ -2,25 +2,25 @@ lockfileVersion: 5.4
 
 specifiers:
   gh-pages: ^3.2.3
-  hls.js: ^1.2.1
   react: ^18.2.0
   react-dom: ^18.2.0
   react-easy-marquee: ^1.2.4
   react-router: ^6.1.1
   react-router-dom: ^6.0.2
   react-scripts: ^5.0.1
+  react-simple-image-slider: ^2.4.1
   react-use: ^17.4.0
   simple-icons: ^7.7.0
   typescript: ^4.7.4
 
 dependencies:
-  hls.js: 1.2.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-easy-marquee: 1.2.4_react@18.2.0
   react-router: 6.3.0_react@18.2.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_hkig7v5ocgjmf7fkdgxm6py2me
+  react-simple-image-slider: 2.4.1
   react-use: 17.4.0_biqbaboplfbrettd7655fr4n2y
   simple-icons: 7.7.0
 
@@ -5190,10 +5190,6 @@ packages:
       '@babel/runtime': 7.18.9
     dev: false
 
-  /hls.js/1.2.1:
-    resolution: {integrity: sha512-+m/5+ikSpmQQvb6FmVWZUZfzvTJMn/QVfiCGP1Oq9WW4RKrAvxlExkhhbcVGgGqLNPFk1kdFkVQur//wKu3JVw==}
-    dev: false
-
   /hoopy/0.1.4:
     resolution: {integrity: sha512-HRcs+2mr52W0K+x8RzcLzuPPmVIKMSv97RGHy0Ea9y/mpcaK+xTrjICA04KAHi4GRzxliNqNJEFYWHghy3rSfQ==}
     engines: {node: '>= 6.0.0'}
@@ -8172,6 +8168,10 @@ packages:
       - webpack-cli
       - webpack-hot-middleware
       - webpack-plugin-serve
+    dev: false
+
+  /react-simple-image-slider/2.4.1:
+    resolution: {integrity: sha512-9T/WjsRThJup43QxzH202rLVNqaUK9P8izTiWOfLcc5w3QygU44a9IQUuIwGYiXtWvw2spRRGLRc5Xd62/vfDg==}
     dev: false
 
   /react-universal-interface/0.6.2_react@18.2.0+tslib@2.4.0:

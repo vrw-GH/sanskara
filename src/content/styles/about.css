@@ -9,7 +9,7 @@
   flex-wrap        : wrap;
   flex-basis       : content;
   /* align-items   : center;  */
-  justify-content  : center;
+  justify-content  : space-evenly;
 }
 
 .about_left {
@@ -56,4 +56,27 @@
   padding      : 20px;
   /* position  : relative;   */
   object-fit   : cover;
+}
+
+.about_right {
+  position    : relative;
+  padding     : 20px;
+  max-width   : calc(60vw - 20px);
+  min-width   : 100px;
+  /* width    : max-content; */
+  height      : auto;
+  object-fit  : cover;
+}
+
+.rsis-container {
+  /* max-height:100%;
+  max-width    :100%; */
+  /* padding      : 20px; */
+  /* position  : relative;   */
+  object-fit: cover;
+}
+
+.rsis-image {
+  object-fit     : cover;
+  background-size: cover;
 }

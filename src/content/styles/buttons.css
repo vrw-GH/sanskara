@@ -39,4 +39,5 @@
 .location {
   background: #ccb039;
   padding   : 30px;
+  float     : none;
 }
