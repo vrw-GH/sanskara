@@ -1,4 +1,5 @@
 // Libraries
+import React from 'react';
 import { Link } from 'react-router-dom';
 import SimpleImageSlider from 'react-simple-image-slider';
 
@@ -33,11 +34,13 @@ function About({ APPDATA }) {
           <div id="about_description">
             <span>
               Sanskara is a wellness sanctuary, conscious eatery &amp; healing
-              retreat. Surrounded by nature in the heart of Dubai. Sanskara is
-              not just another new business.
-              <p>It is Your Home Within.</p>
-              It is a way of life. Curious to know more? Join our growing
-              community. We promise… no chaos, only connection.
+              retreat. Surrounded by nature in the heart of Dubai.
+              <p>
+                Sanskara is not just another new business. It is Your Home
+                Within. It is a way of life.
+              </p>
+              Curious to know more? Join our growing community. We promise… no
+              chaos, only connection.
             </span>
           </div>
           <Link

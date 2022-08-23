@@ -1,23 +1,51 @@
 .about_container {
-  background-color : #dddddd80;
-  border-radius    : 10px;
-  box-shadow       : 2px 2px 20px 10px #dddddd80;
-  margin           : 20px;
-  width            : calc(100% - 40px);
-  display          : inline-flex;
-  /* flex-direction: row;   */
-  flex-wrap        : wrap;
-  flex-basis       : content;
-  /* align-items   : center;  */
-  justify-content  : space-evenly;
+  background-color    : #dddddd80;
+  border-radius       : 10px;
+  box-shadow          : 2px 2px 20px 10px #dddddd80;
+  margin              : 20px;
+  width               : calc(100% - 40px);
+  display             : inline-flex;
+  /* flex-direction   : row;   */
+  flex-wrap           : wrap;
+  flex-basis          : content;
+  /* align-items      : center;  */
+  justify-content     : space-evenly;
+  animation           : container-roll-in 0.2s;
+}
+
+@keyframes container-roll-in {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: calc(100% - 40px);
+  }
 }
 
 .about_left {
-  display  : block;
-  max-width: calc(100vw/12*2 + 100vw/12*1);
-  padding  : 20px;
+  display                              : block;
+  max-width                            : calc(100vw/12*2 + 100vw/12*1);
+  padding                              : 20px;
+  /* background-color                  : grey; */
+  position                             : relative;
+  left                                 : -600px;
+  visibility                           : hidden;
+  animation                            : left-fly-in 1s ease-in-out;
+  animation-delay                      : 0.1s;
+  animation-fill-mode                  : forwards;
+}
 
-  /* background-color: grey; */
+@keyframes left-fly-in {
+  0% {
+    visibility: hidden;
+    left      : -600px;
+  }
+
+  100% {
+    visibility: visible;
+    left      : 0px;
+  }
 }
 
 .about_logo {
@@ -31,11 +59,18 @@
   left               : 10px;
   object-fit         : cover;
   /* background-color: rgb(46, 179, 179);     ! to change */
+  animation          : logo-in 0.9s ease-in;
+}
+
+@keyframes logo-in {
+  0% {
+    opacity: 0;
+  }
 }
 
 .about_left h1 {
   font-size : 3rem;
-  margin    : 2rem 0 1rem;
+  margin    : 1rem 0 1rem;
   text-align: left;
   color     : #ffffff;
 }
@@ -59,13 +94,32 @@
 }
 
 .about_right {
-  position    : relative;
-  padding     : 20px;
-  max-width   : calc(60vw - 20px);
-  min-width   : 100px;
-  /* width    : max-content; */
-  height      : auto;
-  object-fit  : cover;
+  position           : relative;
+  padding            : 20px;
+  max-width          : calc(60vw - 20px);
+  min-width          : 100px;
+  /* width           : max-content; */
+  height             : auto;
+  object-fit         : cover;
+  position           : relative;
+  left               : 1000px;
+  visibility         : hidden;
+  animation          : right-fly-in 1s ease-in-out;
+  animation-delay    : 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes right-fly-in {
+  0% {
+    visibility: hidden;
+    left      : 1000px;
+  }
+
+  100% {
+    visibility: visible;
+    left      : 0px;
+  }
+
 }
 
 .rsis-container {
