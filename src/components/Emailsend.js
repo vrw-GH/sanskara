@@ -19,12 +19,12 @@ const EmailContactForm = () => {
         (result) => {
           console.log(result);
           setSent(JSON.stringify(result));
-          alert(sent);
+          alert('Registration Successful!');
         },
         (error) => {
           console.log(error);
           setSent(JSON.stringify(error));
-          alert(sent);
+          alert('Registration NOT successful!\n- please try later -\n', sent);
         }
       );
   };
@@ -34,6 +34,7 @@ const EmailContactForm = () => {
       <p>
         <input
           name="name-first"
+          id="name-first"
           label="name-first"
           placeholder="First Name"
           type="text"
@@ -42,6 +43,7 @@ const EmailContactForm = () => {
       <p>
         <input
           name="name-last"
+          id="name-last"
           label="name-last"
           placeholder="Last Name"
           type="text"
@@ -50,6 +52,7 @@ const EmailContactForm = () => {
       <p>
         <input
           name="email-address"
+          id="email-address"
           label="email-address"
           placeholder="Email Address"
           type="email"
@@ -58,6 +61,7 @@ const EmailContactForm = () => {
       <p>
         <input
           name="contact-number"
+          id="contact-number"
           label="contact-number"
           placeholder="Contact Number"
           type="text"
