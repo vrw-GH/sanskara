@@ -1,9 +1,9 @@
 # Sanskara Landing Page
 
 ?website, ???
-<h2>Front End Web App - <strong>Landing page with basig register functionality (email home)</strong></h2>
+<h2>Front End Web App - <strong>Landing page with basic email "register" (email home)</strong></h2>
 <div align="center">
-<a href="https://?website"><img alt="screenshot" src="https://raw.githubusercontent.com/vrw-GH/sanskara/main/project-basics/Screenshot.png" width="70%" height="50%" /></a>
+<a href="https://?website"><img alt="screenshot" src="https://raw.githubusercontent.com/vrw-GH/sanskara/f53ed83b176127df1a4e53a2f2fb76fb774c6168/project-basics/Screenshot.png" width="70%" height="50%" /></a>
 </div>
 <pre>
 Developer: Victor Wright

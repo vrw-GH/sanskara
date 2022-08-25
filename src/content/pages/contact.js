@@ -1,6 +1,7 @@
 // Libraries
 
 // Local components
+import EmailContactForm from '../../components/Emailsend.js';
 
 // Local content
 import logo_pic from '../assets/img/logo-sanskara-tp.png';
@@ -14,10 +15,11 @@ import '../styles/buttons.css';
 //-------------------------------------------------
 
 function Contact({ APPDATA }) {
-  const formSubmit = (e) => {
-    console.log(e);
-    e.preventdefault();
-  };
+  // const formSubmit = (e) => {
+  //   console.log(e);
+  //   e.preventdefault();
+  // };
+
   return (
     <>
       <div className="contact_container">
@@ -27,10 +29,11 @@ function Contact({ APPDATA }) {
             Subscribe <i>To Tranquility</i>
           </h1>
           <div id="contact_description">
-            <form onSubmit={formSubmit}>
+            <EmailContactForm />
+            {/* <form onSubmit={formSubmit}>
               <p>
                 <input
-                  id="name-first"
+                  name="name-first"
                   label="name-first"
                   placeholder="First Name"
                   type="text"
@@ -38,7 +41,7 @@ function Contact({ APPDATA }) {
               </p>
               <p>
                 <input
-                  id="name-last"
+                  name="name-last"
                   label="name-last"
                   placeholder="Last Name"
                   type="text"
@@ -46,23 +49,23 @@ function Contact({ APPDATA }) {
               </p>
               <p>
                 <input
-                  id="email"
-                  label="email"
+                  name="email-address"
+                  label="email-address"
                   placeholder="Email Address"
                   type="email"
                 ></input>
               </p>
               <p>
                 <input
-                  id="contact"
-                  label="contact"
+                  name="contact-number"
+                  label="contact-number"
                   placeholder="Contact Number"
                   type="text"
                 ></input>
               </p>
               <button className="buttons secondary">Reset</button>
               <button className="buttons primary">Submit</button>
-            </form>
+            </form> */}
           </div>
         </div>
         <div className="contact_right">

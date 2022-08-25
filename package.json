@@ -15,20 +15,21 @@
     "frontend"
   ],
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "core-js": "^3.25.0",
     "lightgallery": "^2.5.0",
     "pure-react-carousel": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-easy-marquee": "^1.2.4",
-    "react-image-gallery": "^1.2.9",
-    "react-multi-carousel": "^2.8.2",
     "react-router": "^6.1.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "^5.0.1",
     "react-simple-image-slider": "^2.4.1",
     "react-simply-carousel": "^8.3.5",
     "react-use": "^17.4.0",
-    "simple-icons": "^7.7.0"
+    "simple-icons": "^7.7.0",
+    "svgo": "^2.8.0"
   },
   "//dependencies": {
     "@contentful/rich-text-html-renderer": "^15.10.0",
