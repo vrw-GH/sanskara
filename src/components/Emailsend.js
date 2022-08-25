@@ -18,7 +18,8 @@ const EmailContactForm = () => {
       .then(
         (result) => {
           console.log(result);
-          setSent(result);
+          setSent(JSON.stringify(result));
+          alert(sent);
         },
         (error) => {
           console.log(error);
@@ -62,11 +63,13 @@ const EmailContactForm = () => {
           type="text"
         ></input>
       </p>
-      <button className="buttons secondary">Reset</button>
+      <button type="reset" className="buttons secondary">
+        Reset
+      </button>
       <button type="submit" className="buttons primary">
         Submit
       </button>
-      <p>{sent}</p>
+      {/* <i>{sent}</i> */}
     </form>
   );
 };
