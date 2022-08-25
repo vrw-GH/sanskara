@@ -17,10 +17,13 @@ const EmailContactForm = () => {
       )
       .then(
         (result) => {
+          console.log(result);
           setSent(result);
         },
         (error) => {
-          setSent(error);
+          console.log(error);
+          setSent(JSON.stringify(error));
+          alert(sent);
         }
       );
   };
