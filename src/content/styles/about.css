@@ -1,47 +1,38 @@
 .about_container {
-  background-color    : #dddddd80;
-  border-radius       : 10px;
-  box-shadow          : 2px 2px 20px 10px #dddddd80;
-  margin              : 20px;
-  width               : calc(100% - 40px);
-  display             : inline-flex;
-  /* flex-direction   : row;   */
-  flex-wrap           : wrap;
-  flex-basis          : content;
-  /* align-items      : center;  */
-  justify-content     : space-evenly;
-  animation           : container-roll-in 0.2s;
+  background-color   : #dddddd80;
+  border-radius      : 10px;
+  box-shadow         : 2px 2px 20px 10px #dddddd80;
+  margin             : 20px;
+  width              : 0;
+  display            : inline-flex;
+  flex-wrap          : wrap;
+  flex-basis         : content;
+  overflow           : hidden;
+  justify-content    : space-evenly;
+  animation          : container-roll-in 0.2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes container-roll-in {
-  0% {
-    width: 0;
-  }
-
   100% {
     width: calc(100% - 40px);
   }
 }
 
 .about_left {
-  display                              : block;
-  max-width                            : calc(100vw/12*2 + 100vw/12*1);
-  padding                              : 20px;
   /* background-color                  : grey; */
-  position                             : relative;
-  left                                 : -600px;
-  visibility                           : hidden;
-  animation                            : left-fly-in 1s ease-in-out;
-  animation-delay                      : 0.1s;
-  animation-fill-mode                  : forwards;
+  display            : block;
+  position           : relative;
+  max-width          : calc(100vw/12*2 + 100vw/12*1);
+  padding            : 20px;
+  left               : -1000px;
+  visibility         : hidden;
+  animation          : left-fly-in 1s ease-in-out;
+  animation-delay    : 0.1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes left-fly-in {
-  0% {
-    visibility: hidden;
-    left      : -600px;
-  }
-
   100% {
     visibility: visible;
     left      : 0px;
@@ -59,7 +50,8 @@
   left               : 10px;
   object-fit         : cover;
   /* background-color: rgb(46, 179, 179);     ! to change */
-  animation          : logo-in 0.9s ease-in;
+  animation-delay    : 4s;
+  animation          : logo-in 1s ease-in;
 }
 
 @keyframes logo-in {
@@ -81,27 +73,14 @@
   color     : #564141;
 }
 
-.about_pic {
-  max-width    : calc(100vw/12*5 + 100vw/12*1);
-  min-width    : 100px;
-  /* max-height:100%;
-  max-width    :100%; */
-  width        : max-content;
-  height       : auto;
-  padding      : 20px;
-  /* position  : relative;   */
-  object-fit   : cover;
-}
-
 .about_right {
+  /* background-color         : yellow;   */
   position           : relative;
   padding            : 20px;
   max-width          : calc(60vw - 20px);
   min-width          : 100px;
-  /* width           : max-content; */
   height             : auto;
   object-fit         : cover;
-  position           : relative;
   left               : 1000px;
   visibility         : hidden;
   animation          : right-fly-in 1s ease-in-out;
@@ -110,27 +89,28 @@
 }
 
 @keyframes right-fly-in {
-  0% {
-    visibility: hidden;
-    left      : 1000px;
-  }
-
   100% {
     visibility: visible;
     left      : 0px;
   }
-
 }
 
-.rsis-container {
-  /* max-height:100%;
-  max-width    :100%; */
-  /* padding      : 20px; */
-  /* position  : relative;   */
-  object-fit: cover;
+.about_carousel {
+  /* background-color: grey; */
+  /* max-width       : calc(100vw/12*5 + 100vw/12*1); */
+  /* min-width    : 100px; */
+  border-radius: 15px;
+  width        : max-content;
+  height       : 100%;
+  object-fit   : cover;
 }
 
-.rsis-image {
-  object-fit     : cover;
-  background-size: cover;
+.about_pic {
+  max-width    : calc(100vw/12*5 + 100vw/12*1);
+  min-width    : 100px;
+  border-radius: 15px;
+  padding      : 2px;
+  width        : max-content;
+  object-fit   : cover;
+  border-radius: 15px;
 }

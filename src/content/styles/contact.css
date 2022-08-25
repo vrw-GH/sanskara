@@ -1,16 +1,44 @@
 .contact_container {
-  background-color       : #dddddd80;
-  border-radius          : 10px;
-  box-shadow             : 2px 2px 20px 10px #dddddd80;
-  margin                 : 20px;
-  width                  : calc(100% - 40px);
-  display                : inline-flex;
-  /* flex-direction      : row;   */
-  flex-wrap              : wrap;
-  flex-basis             : content;
-  /* align-items         : center;  */
-  /* justify-content     : center; */
-  justify-content        : space-evenly;
+  background-color   : #dddddd80;
+  border-radius      : 10px;
+  box-shadow         : 2px 2px 20px 10px #dddddd80;
+  margin             : 20px;
+  width              : 0;
+  display            : inline-flex;
+  flex-wrap          : wrap;
+  flex-basis         : content;
+  overflow           : hidden;
+  justify-content    : space-evenly;
+  animation          : container-roll-in 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes container-roll-in {
+  100% {
+    width: calc(100% - 40px);
+  }
+}
+
+.contact_left {
+  /* background-color                  : grey; */
+  display                  : block;
+  position                 : relative;
+  /* max-width             : calc(100%/3*2 - 40px); */
+  max-width                : max-content;
+  width                    : 100%;
+  padding                  : 20px;
+  left                     : -1000px;
+  visibility               : hidden;
+  animation                : left-fly-in 1s ease-in-out;
+  animation-delay          : 0.1s;
+  animation-fill-mode      : forwards;
+}
+
+@keyframes left-fly-in {
+  100% {
+    visibility: visible;
+    left      : 0px;
+  }
 }
 
 .contact_logo {
@@ -31,20 +59,6 @@
   0% {
     opacity: 0
   }
-}
-
-.contact_left {
-  display                  : block;
-  /* max-width             : calc(100%/3*2 - 40px); */
-  max-width                : max-content;
-  /* width                 : calc(100vw/12*5 + 100vw/12*1); */
-  /* width                 : calc(100%/2 - 60px); */
-  width                    : 100%;
-  position                 : relative;
-  /* left                  : 20px; */
-  padding                  : 20px;
-  /* background-color      : grey; */
-
 }
 
 .contact_left h1 {
@@ -78,13 +92,24 @@ input::placeholder {
 }
 
 .contact_right {
-  display                     : inline-block;
-  position                    : relative;
-  /* max-width                : calc(60% - 30px); */
-  max-width                   : max-content;
-  width                       : calc(100vw/12*4 + 100vw/12*1);
-  padding                     : 20px;
   /* background-color         : yellow;   */
+  position           : relative;
+  display            : inline-block;
+  padding            : 20px;
+  max-width          : max-content;
+  width              : calc(100vw/12*4 + 100vw/12*1);
+  left               : 1000px;
+  visibility         : hidden;
+  animation          : right-fly-in 1s ease-in-out;
+  animation-delay    : 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes right-fly-in {
+  100% {
+    visibility: visible;
+    left      : 0px;
+  }
 }
 
 .contact_pic {

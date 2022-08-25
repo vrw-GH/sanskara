@@ -1,5 +1,4 @@
 // Libraries
-// import { Link } from 'react-router-dom';
 
 // Local components
 
@@ -17,7 +16,7 @@ import '../styles/buttons.css';
 function Contact({ APPDATA }) {
   const formSubmit = (e) => {
     console.log(e);
-    e.target.preventdefault();
+    e.preventdefault();
   };
   return (
     <>
@@ -28,7 +27,7 @@ function Contact({ APPDATA }) {
             Subscribe <i>To Tranquility</i>
           </h1>
           <div id="contact_description">
-            <form onSubmit={(e) => formSubmit}>
+            <form onSubmit={formSubmit}>
               <p>
                 <input
                   id="name-first"
