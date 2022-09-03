@@ -1,5 +1,5 @@
 # Sanskara Landing Page
-?website, ???
+
 [![GH page](https://github.com/vrw-GH/sanskara/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://vrw-gh.github.io/sanskara)
 
 <div align="center">
@@ -9,31 +9,24 @@
 <a href="https://?website"><img alt="screenshot" src="./project-basics/Screenshot.png?raw=true" width="70%" height="50%" /></a>
 </div>
 <hr />
-> <b>Features:</b>
-
-> Single Page App
-
-> Opening page Video autoplay
-
-> (Info Popup - will not be in client site)
-
-> Follows client scope document
-
-> 2/3 page animation effects on loading
-
-> Email functionality (a) Developer email - mailtrap.io, (b) Client email - MailChimp
-
+> <b>Features:</b><br>
+<sub>
+> Single Page App<br>
+> Opening page Video autoplay<br>
+> (Info Popup - will not be in client site) <br>
+> Follows client scope document<br>
+> 2/3 page animation effects on loading<br>
+> Email functionality (a) Developer email - mailtrap.io, (b) Client email - MailChimp<br>
+</sub>
 <br />
-Deployments :
-<h3><u>V 1.0 alpha</u></h3>
-<span style="color:blue">Stable-release: - <a href="https://">-?website-alpha</a></span>
-<br />
-<span style="color:red" >Pre-release:    <a href="https://">-?website-current version</a></span>
-<br />
+<b>Deployments :</b><br>
 {::comment}
+<br><a href="https://"><span style="color:red">Current-release: (Beta)</span> - ?website-current version</a><br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/???/deploy-status)](https://app.netlify.com/sites/vrwgh-website/deploys)
-<br />
+<br><a href="https://"><span style="color:green"><u>Stable-release: V 1.0</u></span> - ?website</a><br>
 {:/comment}
+<br><a href="https://"><span style="color:blue"><u>Pre-release: V 1.0 (alpha) </u></span> - ?website</a><br>
+<br />
 <pre>
 Developer: Victor Wright
 Client:    Crimson Labs (for Sanskara)
