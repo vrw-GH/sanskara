@@ -30,8 +30,10 @@ Deployments :
 <br />
 <span style="color:red" >Pre-release:    <a href="https://">-?website-current version</a></span>
 <br />
+{::comment}
 [![Netlify Status](https://api.netlify.com/api/v1/badges/???/deploy-status)](https://app.netlify.com/sites/vrwgh-website/deploys)
 <br />
+{:/comment}
 <pre>
 Developer: Victor Wright
 Client:    Crimson Labs (for Sanskara)
