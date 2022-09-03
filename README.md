@@ -20,13 +20,15 @@
 </sub>
 <br />
 <b>Deployments :</b><br>
-<h3>V 1.0 </h3>
-{::comment}
-<br><a href="https://"><span style="color:red">Current-release: (Beta)</span> - ?website-current version</a><br>
+{::comment}<br>
+<a href="https://"><h3 style="color:red">Current-Beta: </h3> - ?website-current version</a><br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/???/deploy-status)](https://app.netlify.com/sites/vrwgh-website/deploys)
-<br><a href="https://"><span style="color:green"><u>Stable-release: </u></span> - ?website</a><br>
 {:/comment}
-<br><a href="https://"><span style="color:blue"><u>Pre-release: (alpha) </u></span> - ?website</a><br>
+<h3>V 1.0 </h3>
+{::comment}<br>
+<a href="https://"><span style="color:green"><u>Stable-release: </u></span> - ?website</a><br>
+{:/comment}<br>
+<a href="https://"><span style="color:blue"><u>Pre-release: (alpha) </u></span> - ?website</a><br>
 <br />
 <pre>
 Developer: Victor Wright
