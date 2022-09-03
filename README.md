@@ -8,7 +8,6 @@
 </p>
 <a href="https://?website"><img alt="screenshot" src="./project-basics/Screenshot.png?raw=true" width="70%" height="50%" /></a>
 </div>
-<hr />
 > <b>Features:</b><br>
 <sub>
 > Single Page App<br>
@@ -18,7 +17,7 @@
 > 2/3 page animation effects on loading<br>
 > Email functionality (a) Developer email - mailtrap.io, (b) Client email - MailChimp<br>
 </sub>
-<br />
+<hr />
 <b>Deployments :</b><br>
 {::comment}<br>
 <a href="https://"><h3 style="color:red">Current-Beta: </h3> - ?website-current version</a><br>

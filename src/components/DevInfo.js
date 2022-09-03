@@ -43,6 +43,11 @@ const DevInfo = ({ APPDATA }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!formFName.current.value || !formEmail.current.value) {
+      alert('Please enter all info.');
+      return;
+    }
+
     const body = {
       firstName: formFName.current.value,
       email: formEmail.current.value,
@@ -75,7 +80,7 @@ const DevInfo = ({ APPDATA }) => {
         } else {
           console.log('Unexpected:', error);
         }
-        alert('Error sending email!\nPlease check console log for info.');
+        alert('Error sending email!\nPlease check console.');
       }
     })();
   };
