@@ -6,7 +6,7 @@
 <h2>Front End Web App</h2>
 <p><strong>Landing page with basic email "registering" - (email home)</strong>
 </p>
-<a href="https://?website"><img alt="screenshot" src="./project-basics/Screenshot.png?raw=true" width="70%" height="50%" /></a>
+<a href="https://sanskara-alpha.netlify.app/"><img alt="screenshot" src="./project-basics/Screenshot.png?raw=true" width="70%" height="50%" /></a>
 </div>
 > <b>Features:</b><br>
 <sub>
@@ -20,14 +20,15 @@
 <hr />
 <b>Deployments :</b><br>
 {::comment}<br>
-<a href="https://"><h3 style="color:red">Current-Beta: </h3> - ?website-current version</a><br>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/???/deploy-status)](https://app.netlify.com/sites/vrwgh-website/deploys)
-{:/comment}
+<a href="https://"><h3 style="color:red">Current-Beta: </h3> - ?website </a><br>
+{:/comment}<br>
 <h3>V 1.0 </h3>
 {::comment}<br>
-<a href="https://"><span style="color:green"><u>Stable-release: </u></span> - ?website</a><br>
+<a href="https://"><span style="color:green"><u>Stable-release: </u></span> - ?website </a><br>
 {:/comment}<br>
-<a href="https://"><span style="color:blue"><u>Pre-release: (alpha) </u></span> - ?website</a><br>
+<a href="https://sanskara-alpha.netlify.app/"><span style="color:blue"><u>Pre-release: (alpha) </u></span> - sanskara-alpha.netlify.app</a>
+<br>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3ae908f-c913-4bff-a928-dc039c51511b/deploy-status)](https://app.netlify.com/sites/sanskara-alpha/deploys)
 <br />
 <pre>
 Developer: Victor Wright
