@@ -1,8 +1,8 @@
 // Libraries
 
 // Local components
-import { IconInstagram, IconYoutube } from '../components/Icons.js';
 import DevInfo from '../components/DevInfo.js';
+import { IconInstagram, IconYoutube } from '../components/Icons.js';
 
 // Local content
 
@@ -23,6 +23,7 @@ const Footer = ({ APPDATA }) => {
         <div className="footer_left">
           <DevInfo APPDATA={APPDATA} />
         </div>
+
         <div className="footer_right">
           <a href="https://www.instagram.com/sanskaradxb" rel="noreferrer">
             <IconInstagram />
