@@ -2,8 +2,8 @@
 
 ?website, ???
 <h2>Front End Web App - <strong>Landing page with basic email "register" (email home)</strong></h2>
-![Github Page](https://github.com/vrw-GH/sanskara/workflows/pages%20build%20and%20deployment/badge.svg)
-<br />
+
+[![GH page](https://github.com/vrw-GH/sanskara/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/vrw-GH/sanskara/actions/workflows/pages/pages-build-deployment)
 <div align="center">
 <a href="https://?website"><img alt="screenshot" src="./project-basics/Screenshot.png?raw=true" width="70%" height="50%" /></a>
 </div>
