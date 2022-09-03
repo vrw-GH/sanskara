@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "axios": "^0.27.2",
     "core-js": "^3.25.0",
     "lightgallery": "^2.5.0",
     "pure-react-carousel": "^1.29.0",
