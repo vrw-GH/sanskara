@@ -1,6 +1,6 @@
 # Sanskara Landing Page
 
-[![GH page](https://github.com/vrw-GH/sanskara/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://vrw-gh.github.io/sanskara)
+[![GH page](https://github.com/vrw-GH/sanskara/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/vrw-GH/sanskara/actions/workflows/pages/pages-build-deployment)
 
 <div align="center">
 <h2>Front End Web App</h2>
@@ -10,12 +10,12 @@
 </div>
 > <b>Features:</b><br>
 <sub>
-> Single Page App<br>
-> Opening page Video autoplay<br>
-> (Info Popup - will not be in client site) <br>
-> Follows client scope document<br>
-> 2/3 page animation effects on loading<br>
-> Email functionality (a) Developer email - mailtrap.io, (b) Client email - MailChimp<br>
+>> Single Page App<br>
+>> Opening page Video autoplay<br>
+>> (Info Popup - will not be in client site) <br>
+>> Follows client scope document<br>
+>> 2/3 page animation effects on loading<br>
+>> Email functionality (a) Developer email - mailtrap.io, (b) Client email - MailChimp<br>
 </sub>
 <hr />
 <b>Deployments :</b><br>
