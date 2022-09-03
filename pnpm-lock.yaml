@@ -8081,7 +8081,7 @@ packages:
   /pure-react-carousel/1.29.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-cdGh1ZRSj3mK4T9OKEMo/tnSm+39UhG9IFt21uAZiyW2iRzLa9om8/DSA17ZCCEksclOYPKTTb2aWkRSRcj0WA==}
     peerDependencies:
-      react: 15.x || 16.x || 17.x || 18.x
+      react: 15.x || 16.x || 17.x || 18.x || 18
       react-dom: 15.x || 16.x || 17.x || 18.x
     dependencies:
       '@babel/runtime': 7.18.9
@@ -8202,7 +8202,7 @@ packages:
   /react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^18.2.0 || 18
     dependencies:
       loose-envify: 1.4.0
       react: 18.2.0
@@ -8213,7 +8213,7 @@ packages:
     resolution: {integrity: sha512-xp0pfCnvcGxniuUZSSFxU3Kf4IVBxTG1FpCuNf0+h0qo01zwrDtVJj4QoxjkPfQulX1K1PdH7SeyIYcZQdMDIg==}
     engines: {node: '>=14', npm: '>=6'}
     peerDependencies:
-      react: ^17.0.2
+      react: ^17.0.2 || 18
     dependencies:
       react: 18.2.0
     dev: false
@@ -8242,7 +8242,7 @@ packages:
   /react-router-dom/6.3.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==}
     peerDependencies:
-      react: '>=16.8'
+      react: '>=16.8 || 18'
       react-dom: '>=16.8'
     dependencies:
       history: 5.3.0
@@ -8254,7 +8254,7 @@ packages:
   /react-router/6.3.0_react@18.2.0:
     resolution: {integrity: sha512-7Wh1DzVQ+tlFjkeo+ujvjSqSJmkt1+8JO+T5xklPlgrh70y7ogx75ODRW0ThWhY7S+6yEDks8TYrtQe/aoboBQ==}
     peerDependencies:
-      react: '>=16.8'
+      react: '>=16.8 || 18'
     dependencies:
       history: 5.3.0
       react: 18.2.0
@@ -8266,7 +8266,7 @@ packages:
     hasBin: true
     peerDependencies:
       eslint: '*'
-      react: '>= 16'
+      react: '>= 16 || 18'
       typescript: ^3.2.1 || ^4
     peerDependenciesMeta:
       typescript:
@@ -8365,7 +8365,7 @@ packages:
     resolution: {integrity: sha512-90f8nHnHkAT/NjsRqlW3koYnVCzew2tvTkh72U9lxndxQRxxROmT7QM6I1mnboRQcAxUjDpDvtOBtkXxGMrNEQ==}
     peerDependencies:
       '@types/react': ^16.8 || ^17 || ^18
-      react: ^16.8 || ^17 || ^18
+      react: ^16.8 || ^17 || ^18 || 18
       react-dom: ^16.8 || ^17 || ^18
     peerDependenciesMeta:
       '@types/react':
@@ -8389,7 +8389,7 @@ packages:
   /react-use/17.4.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-TgbNTCA33Wl7xzIJegn1HndB4qTS9u03QUwyNycUnXaweZkE4Kq2SB+Yoxx8qbshkZGYBDvUXbXWRUmQDcZZ/Q==}
     peerDependencies:
-      react: ^16.8.0  || ^17.0.0 || ^18.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || 18
       react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
     dependencies:
       '@types/js-cookie': 2.2.7
