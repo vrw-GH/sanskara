@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "suffix": "victors-cra-app",
   "info": "please update info",
-  "homepage": ".",
+  "homepage": "https://vrw-GH.github.io/sanskara",
   "private": false,
   "type": "module",
   "license": "ISC",
@@ -112,11 +112,11 @@
   "\\repo": {
     "repository": {
       "type": "git",
-      "url": "https://github.com/vrw-GH/???.git",
+      "url": "https://github.com/vrw-GH/sanskara.git",
       "directory": "."
     },
     "bugs": {
-      "url": "https://github.com/vrw-GH/???/issues"
+      "url": "https://github.com/vrw-GH/sanskara/issues"
     }
   }
 }
