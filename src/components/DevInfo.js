@@ -55,7 +55,7 @@ const DevInfo = ({ APPDATA }) => {
       adminEmail: 'victor.wright@outlook.de'
     };
 
-    const url = process.env.REACT_APP_EMAILER;
+    const url = process.env.REACT_APP_EMAILER_API;
 
     (async () => {
       try {

@@ -9,6 +9,7 @@ specifiers:
   pure-react-carousel: ^1.29.0
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-easy-marquee: ^1.2.4
   react-router: ^6.3.0
   react-router-dom: ^6.3.0
   react-scripts: ^5.0.1
@@ -28,6 +29,7 @@ dependencies:
   pure-react-carousel: 1.29.0_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-easy-marquee: 1.2.4_react@18.2.0
   react-router: 6.3.0_react@18.2.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_yas6qlp6rjeowt6eciwbvt2zny
@@ -8208,6 +8210,15 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-easy-marquee/1.2.4_react@18.2.0:
+    resolution: {integrity: sha512-xp0pfCnvcGxniuUZSSFxU3Kf4IVBxTG1FpCuNf0+h0qo01zwrDtVJj4QoxjkPfQulX1K1PdH7SeyIYcZQdMDIg==}
+    engines: {node: '>=14', npm: '>=6'}
+    peerDependencies:
+      react: ^17.0.2
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-error-overlay/6.0.11:
