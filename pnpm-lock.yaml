@@ -15,7 +15,6 @@ specifiers:
   react-scripts: ^5.0.1
   react-simple-image-slider: ^2.4.1
   react-simply-carousel: ^8.3.5
-  react-ticker: ^1.3.2
   react-use: ^17.4.0
   simple-icons: ^7.10.0
   svgo: ^2.8.0
@@ -35,7 +34,6 @@ dependencies:
   react-scripts: 5.0.1_yas6qlp6rjeowt6eciwbvt2zny
   react-simple-image-slider: 2.4.1
   react-simply-carousel: 8.3.5_biqbaboplfbrettd7655fr4n2y
-  react-ticker: 1.3.2_v2m5e27vhdewzwhryxwfaorcca
   react-use: 17.4.0_biqbaboplfbrettd7655fr4n2y
   simple-icons: 7.10.0
   svgo: 2.8.0
@@ -8379,19 +8377,6 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /react-ticker/1.3.2_v2m5e27vhdewzwhryxwfaorcca:
-    resolution: {integrity: sha512-9sLgc9gFx/EMNxn2QcwUJAOf3jdEROKRyXZGbWrEbfJG/MTkHwR+WRrVtypv3iFXPpcrKmPD91+vatHq0BgR0Q==}
-    engines: {node: '>=8', npm: '>=5'}
-    peerDependencies:
-      prop-types: ^15.8.0
-      react: ^17.0.2
-      react-dom: ^17.0.2
-    dependencies:
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    dev: false
-
   /react-universal-interface/0.6.2_react@18.2.0+tslib@2.4.0:
     resolution: {integrity: sha512-dg8yXdcQmvgR13RIlZbTRQOoUrDciFVoSBZILwjE2LFISxZZ8loVJKAkuzswl5js8BHda79bIb2b84ehU8IjXw==}
     peerDependencies:
@@ -8780,8 +8765,8 @@ packages:
     resolution: {integrity: sha512-mEugaLK+YfkijB4fx0e6kImuJdCIt2LxCRcbEYPqRGCs4F2ogyfZU5IAZRdjCP8JPq2AtdNoC/Dux63d9Kiryg==}
     dev: false
 
-  /selfsigned/2.0.1:
-    resolution: {integrity: sha512-LmME957M1zOsUhG+67rAjKfiWFox3SBxE/yymatMZsAx+oMrJ0YQ8AToOnyCm7xbeg2ep37IHLxdu0o2MavQOQ==}
+  /selfsigned/2.1.0:
+    resolution: {integrity: sha512-eJrI/k4EnaBWykO01ORYvsQgkFwWPnDxmMZd6zVb5S+zWIFFn+jgTR/CSdSyT3RZrKBMCpenh3qb2APaaKI5Lw==}
     engines: {node: '>=10'}
     dependencies:
       node-forge: 1.3.1
@@ -9787,7 +9772,7 @@ packages:
       p-retry: 4.6.2
       rimraf: 3.0.2
       schema-utils: 4.0.0
-      selfsigned: 2.0.1
+      selfsigned: 2.1.0
       serve-index: 1.9.1
       sockjs: 0.3.24
       spdy: 4.0.2
