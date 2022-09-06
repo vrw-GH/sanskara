@@ -15,12 +15,14 @@
     "frontend"
   ],
   "pnpm": {
-    "peerDependencyRules": {
+    "\\peerDependencyRules": {
       "allowedVersions": {
-        "react": "18"
+        "react": ">=18",
+        "react-dom": ">=18"
       },
-      "allowAny": [
-        "react-easy-marquee"
+      "ignoreMissing": [
+        "react@^16.8",
+        "react-dom@^16.8:"
       ]
     }
   },
@@ -32,17 +34,17 @@
     "pure-react-carousel": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-easy-marquee": "^1.2.4",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "react-simple-image-slider": "^2.4.1",
     "react-simply-carousel": "^8.3.5",
+    "react-ticker": "^1.3.2",
     "react-use": "^17.4.0",
-    "simple-icons": "^7.9.0",
-    "svgo": "2"
+    "simple-icons": "^7.10.0",
+    "svgo": "^2.8.0"
   },
-  "//dependencies": {
+  "\\dependencies": {
     "@contentful/rich-text-html-renderer": "^15.10.0",
     "@popperjs/core": "^2.11.0",
     "@ionic/angular": "^6.0.0",
@@ -98,10 +100,10 @@
   "scripts": {
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "//start": "react-scripts start",
+    "\\start": "react-scripts start",
     "start": "react-scripts --openssl-legacy-provider  start",
     "dev": "react-scripts --openssl-legacy-provider start",
-    "//build": "react-scripts build",
+    "\\build": "react-scripts build",
     "build": "react-scripts --openssl-legacy-provider build",
     "serve": "serve -s build",
     "npm-start": "npm run start",
