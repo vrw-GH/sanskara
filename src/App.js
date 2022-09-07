@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 // APP components
-import APPDATA from '../src/components/APPDATA.js';
-import Loading from '../src/components/Loading.js';
+import APPDATA from './components/APPDATA.js';
+import Loading from './components/Loading.js';
 import Marquee from './components/Marquee.js';
 
 // Local components
