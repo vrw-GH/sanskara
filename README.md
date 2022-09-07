@@ -28,7 +28,9 @@
 {:/comment}<br>
 <a href="https://sanskara-alpha.netlify.app/"><span style="color:blue"><u>Pre-release: (alpha) </u></span> - sanskara-alpha.netlify.app</a>
 <br>
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c3ae908f-c913-4bff-a928-dc039c51511b/deploy-status)](https://app.netlify.com/sites/sanskara-alpha/deploys)
+
 <br />
 <pre>
 Developer: Victor Wright

@@ -46,7 +46,6 @@ function App() {
         <Marquee APPDATA={APPDATA} />
       ) : null}
       <Header APPDATA={APPDATA} />
-      {/* <NavbarTop APPDATA={APPDATA} currentUser={currentUser} /> */}
       {loading ? (
         <Loading text={loading} />
       ) : (
