@@ -2,13 +2,17 @@
    "compilerOptions": {
       "module": "ESNext",
       "moduleResolution": "Node",
-      "target": "ES2020",
-      "jsx": "react",
+      "target": "esnext",
+      "jsx": "react-jsx",
       "strictNullChecks": true,
       "strictFunctionTypes": true
    },
    "exclude": [
       "node_modules",
+      "build",
+      "dist",
+      "bak",
+      "vw",
       "**/node_modules/*"
    ]
 }
