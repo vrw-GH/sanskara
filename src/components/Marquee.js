@@ -1,5 +1,5 @@
-// import Mq1 from 'react-easy-marquee'; //! React 17 ???
-import Ticker from 'react-ticker';
+import Mq1 from 'react-easy-marquee'; //! React 17 ???
+// import Ticker from 'react-ticker';
 
 export const Marquee = ({ APPDATA }) => {
   const marqueeText = (
@@ -22,12 +22,12 @@ export const Marquee = ({ APPDATA }) => {
 
   return (
     <>
-      {/* <Mq1 duration="20000" height="1rem" background="red" pauseOnHover={true}>
+      <Mq1 duration="20000" height="1rem" background="red" pauseOnHover={true}>
         {marqueeText}
-      </Mq1> */}
-      <Ticker speed={10} direction="toRight" mode="smooth">
+      </Mq1>
+      {/* <Ticker speed={10} direction="toRight" mode="smooth">
         {() => <>{marqueeText}</>}
-      </Ticker>
+      </Ticker> */}
     </>
   );
 };
