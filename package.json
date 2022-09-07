@@ -134,7 +134,7 @@
     "dev": "react-scripts --openssl-legacy-provider start",
     "\\build": "react-scripts build",
     "build": "react-scripts --openssl-legacy-provider build",
-    "buildnetlify": "react-scripts build",
+    "buildnetlify": "react-scripts build --legacy-peer-deps",
     "serve": "serve -s build",
     "npm-start": "npm run start",
     "npm-build-serve": "npm run build && npm run serve"
