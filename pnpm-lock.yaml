@@ -11078,7 +11078,7 @@ packages:
       }
     engines: { node: '>=14', npm: '>=6' }
     peerDependencies:
-      react: ^17.0.2 || 18.2.0
+      react: ^18
     dependencies:
       react: 18.2.0
     dev: false
@@ -11279,8 +11279,8 @@ packages:
     engines: { node: '>=8', npm: '>=5' }
     peerDependencies:
       prop-types: ^15.8.0
-      react: ^17.0.2 || 18
-      react-dom: ^17.0.2 || 18
+      react: ^18
+      react-dom: ^18
     dependencies:
       prop-types: 15.8.1
       react: 18.2.0
