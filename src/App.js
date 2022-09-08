@@ -12,6 +12,7 @@ import Header from './content/Header.js';
 import Footer from './content/Footer.js';
 import Home from './content/pages/Home.js';
 import About from './content/pages/About.js';
+
 import Contact from './content/pages/Contact.js';
 
 // Local content
