@@ -10,10 +10,9 @@ import DevBanner from './components/DevBanner.js';
 // Local components
 import Header from './content/Header.js';
 import Footer from './content/Footer.js';
-import Home from './content/pages/Home.js';
-import About from './content/pages/About.js';
-
-import Contact from './content/pages/Contact.js';
+import Home from './content/pages/home.js';
+import About from './content/pages/about.js';
+import Contact from './content/pages/contact.js';
 
 // Local content
 
