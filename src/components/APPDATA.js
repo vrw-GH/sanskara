@@ -44,7 +44,7 @@ export const APPDATA = {
       (process.env.PORT || '3000'),
   BACKEND: process.env.REACT_APP_BACKEND || 'http://127.0.0.1:5000',
   MODE: process.env.REACT_APP_PROJECT_FLIGHT || process.env.NODE_ENV || 'Dev',
-  ROOT: process.env.REACT_APP_PUBLIC_URL || '../',
+  ROOT: process.env.REACT_APP_FRONTEND || '../',
   HOST: process.env.HOST || appHomepage || 'http://127.0.0.1',
   PORT: process.env.PORT || 5000
 };
