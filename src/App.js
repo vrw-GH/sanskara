@@ -5,7 +5,6 @@ import { Route, Routes } from 'react-router-dom';
 // APP components
 import APPDATA from './components/APPDATA.js';
 import Loading from './components/Loading.js';
-import Marquee from './components/Marquee.js';
 
 // Local components
 import Header from './content/Header.js';
@@ -42,9 +41,6 @@ function App() {
 
   return (
     <>
-      {APPDATA.MODE.substring(0, 4).toUpperCase() !== 'PROD' ? (
-        <Marquee APPDATA={APPDATA} />
-      ) : null}
       <Header APPDATA={APPDATA} />
       {loading ? (
         <Loading text={loading} />
