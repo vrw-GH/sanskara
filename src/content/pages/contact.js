@@ -1,7 +1,7 @@
 // Libraries
 
 // Local components
-import EmailContactForm from '../../components/Emailsend.js';
+import EmailContactForm from '../../components/EmailSend.js';
 
 // Local content
 import logo_pic from '../assets/img/logo-sanskara-tp.png';

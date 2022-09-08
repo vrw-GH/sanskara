@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 // APP components
 import APPDATA from './components/APPDATA.js';
 import Loading from './components/Loading.js';
+import DevBanner from './components/DevBanner.js';
 
 // Local components
 import Header from './content/Header.js';
@@ -41,6 +42,9 @@ function App() {
 
   return (
     <>
+      {!APPDATA.MODE.toUpperCase().includes('RELEASE') ? (
+        <DevBanner APPDATA={APPDATA} />
+      ) : null}
       <Header APPDATA={APPDATA} />
       {loading ? (
         <Loading text={loading} />
