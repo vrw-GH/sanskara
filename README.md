@@ -13,8 +13,8 @@
 >> • Follows client scope document<br>
 >> • 2/3 page animation effects on loading<br>
 >> • Email functionality 
->>>  ≈ Developer email - own php backend API 
->>>  ≈ Client email - emailjs/MailChimp<br>
+..... ≈ Developer email - own php backend API <br>
+..... ≈ Client email - emailjs/MailChimp <br>
 <hr />
 <b>Deployments :</b>
 <!-- <br>
