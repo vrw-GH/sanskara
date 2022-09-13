@@ -18,13 +18,13 @@
   background-repeat: no-repeat;
   width            : 30vw;
   height           : 300px;
-  min-width        : 200px;
+  min-width        : 100px;
   max-width        : 300px;
   /* max-height    : 300px; */
   position         : fixed;
   /* absolute, relative, fixed */
-  top              : 28px;
-  left             : 38px;
+  top              : 35px;
+  left             : 35px;
 }
 
 .home_video {

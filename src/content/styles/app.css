@@ -74,7 +74,7 @@ a:hover {
   position   : relative;
   white-space: nowrap;
   font-size  : 0.8rem;
-  animation  : flowLeft linear 8s infinite;
+  animation  : flowLeft linear 10s infinite;
 }
 
 @keyframes flowLeft {

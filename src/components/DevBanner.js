@@ -4,14 +4,15 @@ import '../content/styles/app.css';
 const DevBanner = ({ APPDATA }) => {
   return (
     <div
-      class="marquee"
+      className="marquee"
       onClick={(e) => {
         e.target.style.display = 'none';
       }}
     >
       <div>
-        ╢ App is in {APPDATA.MODE.toUpperCase()} Mode.&emsp;React Version:&nbsp;
-        {React.version}.&emsp; ► Click to hide ◄ ╟
+        ╢&emsp; App is in {APPDATA.MODE.toUpperCase()} Mode.&emsp;React
+        Version:&nbsp;
+        {React.version}.&emsp; ► Click to hide ◄ &emsp;╟
       </div>
     </div>
   );
