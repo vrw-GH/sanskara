@@ -30,42 +30,6 @@ function Contact({ APPDATA }) {
           </h1>
           <div id="contact_description">
             <EmailContactForm />
-            {/* <form onSubmit={formSubmit}>
-              <p>
-                <input
-                  name="name-first"
-                  label="name-first"
-                  placeholder="First Name"
-                  type="text"
-                ></input>
-              </p>
-              <p>
-                <input
-                  name="name-last"
-                  label="name-last"
-                  placeholder="Last Name"
-                  type="text"
-                ></input>
-              </p>
-              <p>
-                <input
-                  name="email-address"
-                  label="email-address"
-                  placeholder="Email Address"
-                  type="email"
-                ></input>
-              </p>
-              <p>
-                <input
-                  name="contact-number"
-                  label="contact-number"
-                  placeholder="Contact Number"
-                  type="text"
-                ></input>
-              </p>
-              <button className="buttons secondary">Reset</button>
-              <button className="buttons primary">Submit</button>
-            </form> */}
           </div>
         </div>
         <div className="contact_right">
