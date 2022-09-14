@@ -4,27 +4,22 @@
 import EmailContactForm from '../../components/EmailSend.js';
 
 // Local content
-import logo_pic from '../assets/img/logo-sanskara-tp.png';
 import contact_pic from '../assets/img/contact.png';
 import location_icon from '../assets/icons/location.svg';
 
 // Local styles
 import '../styles/contact.css';
+import '../styles/logo.css';
 import '../styles/buttons.css';
 
 //-------------------------------------------------
 
 function Contact({ APPDATA }) {
-  // const formSubmit = (e) => {
-  //   console.log(e);
-  //   e.preventdefault();
-  // };
-
   return (
     <>
       <div className="contact_container">
         <div className="contact_left">
-          <img alt="logo-pic.jpeg" src={logo_pic} className="contact_logo" />
+          <div className="contact_logo logo"></div>
           <h1>
             Subscribe <i>To Tranquility</i>
           </h1>

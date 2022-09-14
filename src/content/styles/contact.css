@@ -41,26 +41,6 @@
   }
 }
 
-.contact_logo {
-  width              : 50%;
-  min-width          : 150px;
-  max-width          : 300px;
-  height             : auto;
-  min-height         : 120px;
-  position           : relative;
-  top                : 10px;
-  left               : 10px;
-  object-fit         : cover;
-  /* background-color: rgb(46, 179, 179);     ! to change */
-  animation          : logo-in 0.9s ease-in;
-}
-
-@keyframes logo-in {
-  0% {
-    opacity: 0
-  }
-}
-
 .contact_left h1 {
   font-size : 3rem;
   margin    : 1rem 0 1rem;

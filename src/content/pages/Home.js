@@ -9,6 +9,7 @@ import poster from '../assets/media/frame0601.png';
 
 // Local styles
 import '../styles/home.css';
+import '../styles/logo.css';
 
 //-------------------------------------------------
 
@@ -24,10 +25,8 @@ function Home({ APPDATA }) {
   useEffect(() => {
     vidRef.current.controls = false;
     vidRef.current.autoPlay = false;
-    // vidRef.current.muted = muted;
     vidRef.current.loop = true;
     vidRef.current.poster = poster;
-    // const timer = setTimeout(setMuted, 1500, false);
     const timer = setTimeout(handlePlayVideo, 500);
     return () => {
       clearTimeout(timer);
@@ -43,7 +42,7 @@ function Home({ APPDATA }) {
           backgroundImage: 'url(' + APPDATA.HOMEIMG + ')'
         }}
       >
-        <div className="home_logo"></div>
+        <div className="home_logo logo"></div>
         <div className="home_video" onClick={handlePlayVideo}>
           {/* <video
             controls={false}
