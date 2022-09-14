@@ -1,0 +1,30 @@
+.marquee {
+   background: #ff000080;
+   overflow  : hidden;
+   position  : absolute;
+   cursor    : zoom-out;
+   margin    : 0 1vw 0 1vw;
+   width     : calc(100vw - 40px);
+   z-index   : 9999;
+}
+
+.marquee div {
+   position   : relative;
+   white-space: nowrap;
+   font-size  : 0.8rem;
+   animation  : flowLeft linear 10s infinite;
+}
+
+@keyframes flowLeft {
+   0% {
+      right: -90%
+   }
+
+   100% {
+      right: 350px
+   }
+}
+
+.marquee div:hover {
+   animation-play-state: paused;
+}

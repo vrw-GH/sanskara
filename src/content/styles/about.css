@@ -1,35 +1,14 @@
-.about_container {
-  background-color   : #dddddd80;
-  border-radius      : 10px;
-  box-shadow         : 2px 2px 20px 10px #dddddd80;
-  margin             : 20px;
-  width              : 0;
-  display            : inline-flex;
-  flex-wrap          : wrap;
-  flex-basis         : content;
-  overflow           : hidden;
-  justify-content    : space-evenly;
-  animation          : container-roll-in 0.2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes container-roll-in {
-  100% {
-    width: calc(100% - 40px);
-  }
-}
-
 .about_left {
-  /* background-color                  : grey; */
-  display            : block;
-  position           : relative;
-  max-width          : calc(100vw/12*2 + 100vw/12*1);
-  padding            : 20px;
-  left               : -1000px;
-  visibility         : hidden;
-  animation          : left-fly-in 1s ease-in-out;
-  animation-delay    : 0.1s;
-  animation-fill-mode: forwards;
+  border                : 1px green dashed;
+  position              : relative;
+  max-width             : 34%;
+  /* max-width          : calc(100vw/12*2 + 100vw/12*1); */
+  min-width             : min-content;
+  left                  : -1000px;
+  visibility            : hidden;
+  animation             : left-fly-in 1s ease-in-out;
+  animation-delay       : 0.1s;
+  animation-fill-mode   : forwards;
 }
 
 @keyframes left-fly-in {
@@ -39,30 +18,9 @@
   }
 }
 
-.about_logo {
-  width              : 50%;
-  min-width          : 150px;
-  max-width          : 300px;
-  height             : auto;
-  min-height         : 120px;
-  position           : relative;
-  top                : 10px;
-  left               : 10px;
-  object-fit         : cover;
-  /* background-color: rgb(46, 179, 179);     ! to change */
-  animation-delay    : 4s;
-  animation          : logo-in 1s ease-in;
-}
-
-@keyframes logo-in {
-  0% {
-    opacity: 0;
-  }
-}
-
 .about_left h1 {
   font-size : 3rem;
-  margin    : 1rem 0 1rem;
+  margin    : 0 0 1rem;
   text-align: left;
   color     : #ffffff;
 }
@@ -74,19 +32,22 @@
 }
 
 .about_right {
-  /* background-color         : yellow;   */
-  position           : relative;
-  padding            : 20px;
-  max-width          : calc(60vw - 20px);
-  min-width          : 100px;
-  width              : calc(60vw - 20px);
-  height             : auto;
-  object-fit         : cover;
-  left               : 1000px;
-  visibility         : hidden;
-  animation          : right-fly-in 1s ease-in-out;
-  animation-delay    : 0.1s;
-  animation-fill-mode: forwards;
+  border                   : 1px red dashed;
+  border-radius            : 15px;
+  position                 : relative;
+  max-width                : 64%;
+  min-width                : min-content;
+  /* max-width             : calc(60vw - 20px); */
+  /* min-width             : 100px; */
+  /* width                 : calc(60vw - 20px); */
+  height                   : auto;
+  object-fit               : cover;
+  overflow                 : hidden;
+  left                     : 1000px;
+  visibility               : hidden;
+  animation                : right-fly-in 1s ease-in-out;
+  animation-delay          : 0.1s;
+  animation-fill-mode      : forwards;
 }
 
 @keyframes right-fly-in {
@@ -97,19 +58,14 @@
 }
 
 .about_carousel {
-  /* background-color: grey; */
-  /* max-width       : calc(100vw/12*5 + 100vw/12*1); */
-  /* min-width    : 100px; */
-  border-radius: 15px;
-  width        : max-content;
-  height       : 100%;
-  object-fit   : cover;
+  /* width     : max-content; */
+  height    : 100%;
+  object-fit: cover;
 }
 
 .about_pic {
   max-width    : calc(100vw/12*5 + 100vw/12*1);
   min-width    : 100px;
-  border-radius: 15px;
   padding      : 2px;
   width        : max-content;
   object-fit   : cover;

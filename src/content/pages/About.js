@@ -1,16 +1,15 @@
 // Libraries
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Local components
 import { Gallery2 as Gallery } from '../../components/Galleries.js';
 
 // Local content
-import logo_pic from '../assets/img/logo-sanskara-tp.png';
 import icon_join from '../assets/icons/join.svg';
 
 // Local styles
 import '../styles/about.css';
+import '../styles/logo.css';
 import '../styles/buttons.css';
 
 //-------------------------------------------------
@@ -18,9 +17,9 @@ import '../styles/buttons.css';
 function About({ APPDATA }) {
   return (
     <>
-      <div className="about_container">
+      <div className="container">
         <div className="about_left">
-          <img alt="logo-pic.jpeg" src={logo_pic} className="about_logo" />
+          <div className="about_logo logo"></div>
           <h1>About</h1>
           <div id="about_description">
             <span>

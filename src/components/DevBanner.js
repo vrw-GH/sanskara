@@ -1,5 +1,5 @@
 import React from 'react';
-import '../content/styles/app.css';
+import '../content/styles/marquee.css';
 
 const DevBanner = ({ APPDATA }) => {
   return (
