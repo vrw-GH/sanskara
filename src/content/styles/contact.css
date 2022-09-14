@@ -1,24 +1,3 @@
-.contact_container {
-  background-color   : #dddddd80;
-  border-radius      : 10px;
-  box-shadow         : 2px 2px 20px 10px #dddddd80;
-  margin             : 20px;
-  width              : 0;
-  display            : inline-flex;
-  flex-wrap          : wrap;
-  flex-basis         : content;
-  overflow           : hidden;
-  justify-content    : space-evenly;
-  animation          : container-roll-in 0.2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes container-roll-in {
-  100% {
-    width: calc(100% - 40px);
-  }
-}
-
 .contact_left {
   /* background-color                  : grey; */
   display                  : block;

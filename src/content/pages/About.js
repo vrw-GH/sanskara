@@ -1,5 +1,4 @@
 // Libraries
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Local components
@@ -18,7 +17,7 @@ import '../styles/buttons.css';
 function About({ APPDATA }) {
   return (
     <>
-      <div className="about_container">
+      <div className="container">
         <div className="about_left">
           <div className="about_logo logo"></div>
           <h1>About</h1>

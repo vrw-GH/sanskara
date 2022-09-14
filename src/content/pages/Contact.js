@@ -17,7 +17,7 @@ import '../styles/buttons.css';
 function Contact({ APPDATA }) {
   return (
     <>
-      <div className="contact_container">
+      <div className="container">
         <div className="contact_left">
           <div className="contact_logo logo"></div>
           <h1>
