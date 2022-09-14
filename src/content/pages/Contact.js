@@ -49,7 +49,6 @@ function Contact({ APPDATA }) {
                 <a
                   href={`mailto:connect@sanskara.com?subject=Inquiry:%20${APPDATA.PROJECT}
                     &body=I%20am%20interested%20in%20your%20project!`}
-                  style={{ color: 'white' }}
                   title="Link opens in your email app"
                 >
                   connect@sanskara.com

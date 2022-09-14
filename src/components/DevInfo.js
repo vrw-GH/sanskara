@@ -122,9 +122,7 @@ const DevInfo = ({ APPDATA }) => {
             {!APPDATA.INFO ? null : <i>{APPDATA.INFO}</i>}
             {!APPDATA.DESCRIPTION ? null : <h4>{APPDATA.DESCRIPTION}</h4>}
             {!APPDATA.WEBSITE ? null : (
-              <a href={APPDATA.WEBSITE} style={{ color: 'white' }}>
-                Website: {APPDATA.WEBSITE}
-              </a>
+              <a href={APPDATA.WEBSITE}>Website: {APPDATA.WEBSITE}</a>
             )}
           </li>
           <li>

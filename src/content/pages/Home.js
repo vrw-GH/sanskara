@@ -1,5 +1,5 @@
 // Libraries
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 // Local components
 
@@ -13,14 +13,27 @@ import '../styles/home.css';
 //-------------------------------------------------
 
 function Home({ APPDATA }) {
-  const [muted, setMuted] = useState(true);
+  const [play, setPlay] = useState(true);
+  const vidRef = useRef(null);
+
+  const handlePlayVideo = () => {
+    setPlay(!play);
+    play ? vidRef.current.play() : vidRef.current.pause();
+  };
 
   useEffect(() => {
-    const timer = setTimeout(setMuted, 500, false);
+    vidRef.current.controls = false;
+    vidRef.current.autoPlay = false;
+    // vidRef.current.muted = muted;
+    vidRef.current.loop = true;
+    vidRef.current.poster = poster;
+    // const timer = setTimeout(setMuted, 1500, false);
+    const timer = setTimeout(handlePlayVideo, 500);
     return () => {
       clearTimeout(timer);
     };
-  }, [muted]);
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <>
@@ -31,20 +44,23 @@ function Home({ APPDATA }) {
         }}
       >
         <div className="home_logo"></div>
-        <div className="home_video">
-          <video
+        <div className="home_video" onClick={handlePlayVideo}>
+          {/* <video
             controls={false}
-            autoPlay={true}
+            autoPlay={!muted}
             muted={muted}
             loop={true}
             poster={poster}
-            // poster="../assets/media/frame0601.png"
           >
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video> */}
+          <video ref={vidRef}>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <p className="home_openingsoon">Opening Soon</p>
+        <p className="home_welcomemsg">Opening Soon</p>
       </div>
     </>
   );

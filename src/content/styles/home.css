@@ -1,15 +1,6 @@
 .home_container {
-  /* background-image: url("home.jpg"); */
-  /* background-repeat: no-repeat;
-  background-position: top center; */
   background-size : cover;
   background-color: #C79780;
-}
-
-.home_welcomemsg {
-  font-size : 4rem;
-  padding   : 2rem;
-  text-align: center;
 }
 
 .home_logo {
@@ -17,37 +8,38 @@
   background-size  : contain;
   background-repeat: no-repeat;
   width            : 30vw;
-  height           : 300px;
+  height           : 30vw;
   min-width        : 200px;
+  min-height       : 200px;
   max-width        : 300px;
-  /* max-height    : 300px; */
-  position         : fixed;
-  /* absolute, relative, fixed */
-  top              : 28px;
+  max-height       : 300px;
+  position         : relative;
+  top              : -20px;
   left             : 38px;
 }
 
 .home_video {
-  /* background-image: url("../assets/img/logo-sanskara-tp.png"); */
   display        : inline-flex;
   justify-content: center;
-  align-content  : center;
-  width          : 90vw;
-  height         : 600px;
+  width          : 100%;
+  height         : 80vw;
+  min-height     : 300px;
+  max-height     : 800px;
   object-fit     : cover;
-  z-index        : -100;
-  /* left        : 38px;
-  top            : 97px; */
   background-size: cover;
+  margin-top     : -20vw;
+  z-index        : -100;
 }
 
-.home_openingsoon {
-  padding   : 0rem;
-  font-size : 6rem;
-  margin    : 0px;
-  margin-top: -120px;
-  width     : 90vw;
-  text-align: center;
-  color     : #997b2c;
-  filter    : drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.7));
+.home_welcomemsg {
+  display        : flex;
+  justify-content: center;
+  align-content  : center;
+  padding        : 0rem;
+  font-size      : 6rem;
+  margin         : 0px;
+  margin-top     : -120px;
+  text-align     : center;
+  color          : #997b2c;
+  filter         : drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.7));
 }

@@ -24,25 +24,26 @@
 
 html {
   background-color   : #C79780;
-  /* background-image: linear-gradient(300deg, #75c2db40, #2a5ae090 60%); */
   background-repeat  : no-repeat;
   background-position: right;
 }
 
 body {
-  color  : white;
-  padding: 0 20px;
+  color    : white;
+  /* border: 1px yellow dashed; */
 }
 
 a {
-  color          : inherit;
+  color          : #facdcd;
   text-decoration: none;
   display        : inline-block;
 }
 
 a:hover {
-  color          : blue;
-  text-decoration: underline;
+  color             : #c44c14;
+  color             : white;
+  text-shadow       : 1px 1px 0 black;
+  /* text-decoration: underline; */
 }
 
 .block {
@@ -63,11 +64,11 @@ a:hover {
 .marquee {
   background: #ff000080;
   overflow  : hidden;
-  z-index   : 9999;
   position  : absolute;
   cursor    : zoom-out;
-  margin    : auto;
-  width     : calc(100vw - 50px);
+  margin    : 0 1vw 0 1vw;
+  width     : calc(100vw - 40px);
+  z-index   : 9999;
 }
 
 .marquee div {

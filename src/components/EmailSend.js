@@ -4,9 +4,11 @@ import emailjs from '@emailjs/browser';
 const EmailContactForm = () => {
   const form = useRef();
   const [sent, setSent] = useState('');
+  const [btnTxt, setBtnTxt] = useState('Submit');
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    setBtnTxt('Sending...');
 
     const templateData = {
       name_first: form.current.name_first.value,
@@ -16,7 +18,7 @@ const EmailContactForm = () => {
       reply_to: form.current.email_address.value
     };
 
-    emailjs
+    await emailjs
       .send(
         process.env.REACT_APP_EMAILJS_SVC,
         process.env.REACT_APP_EMAILJS_TMP,
@@ -26,7 +28,7 @@ const EmailContactForm = () => {
       .then(
         (result) => {
           setSent(JSON.stringify(result));
-          alert('Registration Successful!');
+          // alert('Registration Successful!'); //* using button "status" !!
         },
         (error) => {
           console.log(error);
@@ -34,6 +36,7 @@ const EmailContactForm = () => {
           alert('Registration NOT successful!\n- please try later -\n', sent);
         }
       );
+    setBtnTxt('Sent');
   };
 
   return (
@@ -45,6 +48,8 @@ const EmailContactForm = () => {
           // label="name_first"
           placeholder="First Name"
           type="text"
+          required={true}
+          disabled={btnTxt === 'Submit' ? false : true}
         ></input>
       </p>
       <p>
@@ -54,6 +59,7 @@ const EmailContactForm = () => {
           // label="name_last"
           placeholder="Last Name"
           type="text"
+          disabled={btnTxt === 'Submit' ? false : true}
         ></input>
       </p>
       <p>
@@ -63,6 +69,8 @@ const EmailContactForm = () => {
           // label="email_address"
           placeholder="Email Address"
           type="email"
+          required={true}
+          disabled={btnTxt === 'Submit' ? false : true}
         ></input>
       </p>
       <p>
@@ -72,13 +80,23 @@ const EmailContactForm = () => {
           // label="contact_number"
           placeholder="Contact Number"
           type="text"
+          required={true}
+          disabled={btnTxt === 'Submit' ? false : true}
         ></input>
       </p>
-      <button type="reset" className="buttons secondary">
+      <button
+        type="reset"
+        className="buttons secondary"
+        onClick={() => setBtnTxt('Submit')}
+      >
         Reset
       </button>
-      <button type="submit" className="buttons primary">
-        Submit
+      <button
+        type="submit"
+        className="buttons primary"
+        disabled={btnTxt === 'Submit' ? false : true}
+      >
+        {btnTxt}
       </button>
       {/* <i>{sent}</i> */}
     </form>
