@@ -4,7 +4,7 @@ import '../content/styles/app.css';
 const DevBanner = ({ APPDATA }) => {
   return (
     <div
-      class="marquee"
+      className="marquee"
       onClick={(e) => {
         e.target.style.display = 'none';
       }}
