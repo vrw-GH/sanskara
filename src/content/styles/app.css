@@ -57,7 +57,7 @@ a:hover {
 }
 
 .container {
-  border             : 1px yellow dashed;
+  /* border             : 1px yellow dashed; */
   background-color   : #dddddd80;
   border-radius      : 10px;
   box-shadow         : 2px 2px 20px 10px #dddddd80;

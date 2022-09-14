@@ -1,5 +1,5 @@
 .about_left {
-  border                : 1px green dashed;
+  /* border                : 1px green dashed; */
   position              : relative;
   max-width             : 34%;
   /* max-width          : calc(100vw/12*2 + 100vw/12*1); */
@@ -32,7 +32,7 @@
 }
 
 .about_right {
-  border                   : 1px red dashed;
+  /* border                   : 1px red dashed; */
   border-radius            : 15px;
   position                 : relative;
   max-width                : 64%;
