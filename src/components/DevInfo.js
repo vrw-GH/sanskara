@@ -121,9 +121,6 @@ const DevInfo = ({ APPDATA }) => {
             )}
             {!APPDATA.INFO ? null : <i>{APPDATA.INFO}</i>}
             {!APPDATA.DESCRIPTION ? null : <h4>{APPDATA.DESCRIPTION}</h4>}
-            {!APPDATA.WEBSITE ? null : (
-              <a href={APPDATA.WEBSITE}>Website: {APPDATA.WEBSITE}</a>
-            )}
           </li>
           <li>
             <>
@@ -135,7 +132,55 @@ const DevInfo = ({ APPDATA }) => {
                   <br />
                 </small>
               )}
+              {!APPDATA.REPO.page ? null : (
+                <>
+                  Repo:{' '}
+                  <a href={APPDATA.REPO.page}>
+                    <small>{APPDATA.REPO.page}</small>
+                  </a>
+                  <br />
+                </>
+              )}
+              Contact us:
+              <br />
               <small>
+                <form style={{ display: contacted ? 'none' : 'block' }}>
+                  <input
+                    ref={formFName}
+                    name="nameFirst"
+                    id="nameFirst"
+                    // label="First Name"
+                    placeholder="First Name"
+                    type="text"
+                    required={true}
+                    title=""
+                    onClick={(e) => e.stopPropagation()}
+                    onMouseLeave={(e) => e.stopPropagation()}
+                    style={formInput}
+                  ></input>
+                  <br />
+                  <input
+                    ref={formEmail}
+                    name="email"
+                    id="email"
+                    // label="Email"
+                    placeholder="Email"
+                    type="email"
+                    required={true}
+                    title=""
+                    onClick={(e) => e.stopPropagation()}
+                    onMouseLeave={(e) => e.stopPropagation()}
+                    style={formInput}
+                  ></input>
+                  <button
+                    type="button"
+                    title="Send us your contact."
+                    style={formBtn}
+                    onClick={sendEmail}
+                  >
+                    Send
+                  </button>
+                </form>
                 {!APPDATA.EMAIL ? null : (
                   <>
                     <a
@@ -153,43 +198,6 @@ const DevInfo = ({ APPDATA }) => {
                 <br />
                 {!APPDATA.ADDRESS ? null : 'Address: ' + APPDATA.ADDRESS}
               </small>
-              <form style={{ display: contacted ? 'none' : 'block' }}>
-                <input
-                  ref={formFName}
-                  name="nameFirst"
-                  id="nameFirst"
-                  // label="First Name"
-                  placeholder="First Name"
-                  type="text"
-                  required={true}
-                  title=""
-                  onClick={(e) => e.stopPropagation()}
-                  onMouseLeave={(e) => e.stopPropagation()}
-                  style={formInput}
-                ></input>
-                <br />
-                <input
-                  ref={formEmail}
-                  name="email"
-                  id="email"
-                  // label="Email"
-                  placeholder="Email"
-                  type="email"
-                  required={true}
-                  title=""
-                  onClick={(e) => e.stopPropagation()}
-                  onMouseLeave={(e) => e.stopPropagation()}
-                  style={formInput}
-                ></input>
-                <button
-                  type="button"
-                  title="Send us your contact."
-                  style={formBtn}
-                  onClick={sendEmail}
-                >
-                  Send
-                </button>
-              </form>
             </>
           </li>
         </ul>
