@@ -17,6 +17,7 @@ const appDescription =
   process.env.REACT_APP_DESCRIPTION ||
   PKGDATA.description ||
   ' - to be described -';
+const appREPO = PKGDATA.repository || 'App REPO Not Set';
 
 export const APPDATA = {
   TITLE: appName,
@@ -29,9 +30,10 @@ export const APPDATA = {
   DESCRIPTION: appDescription,
   WEBSITE: appHomepage,
   DEVLEAD: appAuthor,
+  REPO: appREPO, //* is object!
   //---------------------------------------
   DEVTEAM: process.env.REACT_APP_PROJECT_TEAM || '',
-  EMAIL: process.env.REACT_APP_DEV_EMAIL || 'victor.wright@outlook.de',
+  EMAIL: process.env.REACT_APP_DEV_EMAIL || 'developer@wrightsdesk.com',
   PHONE: process.env.REACT_APP_DEV_PHONE || '+49 176 4677 4278',
   ADDRESS: process.env.REACT_APP_DEV_ADDR || '83707, Germany',
   HOMEIMG: process.env.REACT_APP_HOMEIMG || '',
