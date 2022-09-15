@@ -17,17 +17,23 @@ function Home({ APPDATA }) {
   const [play, setPlay] = useState(true);
   const vidRef = useRef(null);
 
+  const unMute = () => {
+    vidRef.current.muted = false;
+  };
+
   const handlePlayVideo = () => {
     setPlay(!play);
-    play ? vidRef.current.play() : vidRef.current.pause();
+    play ? vidRef.current.pause() : vidRef.current.play();
   };
 
   useEffect(() => {
     vidRef.current.controls = false;
-    vidRef.current.autoPlay = false;
+    vidRef.current.autoPlay = true;
+    vidRef.current.muted = true;
     vidRef.current.loop = true;
     vidRef.current.poster = poster;
-    const timer = setTimeout(handlePlayVideo, 500);
+    vidRef.current.play();
+    const timer = setTimeout(unMute, 500);
     return () => {
       clearTimeout(timer);
     };
