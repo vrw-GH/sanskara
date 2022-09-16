@@ -20,7 +20,7 @@ import Contact from './content/pages/Contact.js';
 import './content/styles/app.css';
 
 //-------------------------------------------------
-document.title = 'Welcome to ' + APPDATA.NAME;
+document.title = 'Welcome to ' + APPDATA.TITLE;
 //-------------------------------------------------
 
 function App() {
