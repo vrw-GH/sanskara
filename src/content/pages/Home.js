@@ -33,7 +33,7 @@ function Home({ APPDATA }) {
     vidRef.current.loop = true;
     vidRef.current.poster = poster;
     vidRef.current.play();
-    const timer = setTimeout(unMute, 500);
+    const timer = setTimeout(unMute, 7000);
     return () => {
       clearTimeout(timer);
     };
