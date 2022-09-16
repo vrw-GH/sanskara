@@ -144,7 +144,10 @@ const DevInfo = ({ APPDATA }) => {
               Contact us:
               <br />
               <small>
-                <form style={{ display: contacted ? 'none' : 'block' }}>
+                <form
+                  style={{ display: contacted ? 'none' : 'block' }}
+                  title="Contact us."
+                >
                   <input
                     ref={formFName}
                     name="nameFirst"
@@ -172,15 +175,23 @@ const DevInfo = ({ APPDATA }) => {
                     onMouseLeave={(e) => e.stopPropagation()}
                     style={formInput}
                   ></input>
-                  <button
-                    type="button"
-                    title="Send us your contact."
-                    style={formBtn}
-                    onClick={sendEmail}
-                  >
+                  <button type="button" style={formBtn} onClick={sendEmail}>
                     Send
                   </button>
                 </form>
+                {!APPDATA.PHONE ? null : (
+                  <a
+                    href={`tel:${APPDATA.PHONE}`}
+                    style={{ color: 'white' }}
+                    title="Click to call"
+                  >
+                    Phone: {APPDATA.PHONE}
+                  </a>
+                )}
+
+                <br />
+                {!APPDATA.ADDRESS ? null : 'Address: ' + APPDATA.ADDRESS}
+                <br />
                 {!APPDATA.EMAIL ? null : (
                   <>
                     <a
@@ -193,10 +204,6 @@ const DevInfo = ({ APPDATA }) => {
                     </a>
                   </>
                 )}
-                <br />
-                {!APPDATA.PHONE ? null : 'Phone: ' + APPDATA.PHONE}
-                <br />
-                {!APPDATA.ADDRESS ? null : 'Address: ' + APPDATA.ADDRESS}
               </small>
             </>
           </li>
