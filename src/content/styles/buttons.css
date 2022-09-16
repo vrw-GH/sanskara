@@ -38,6 +38,6 @@
 
 .location {
   background: #ccb039;
-  padding   : 30px;
+  padding   : calc(0.4rem + 1vw);
   float     : none;
 }

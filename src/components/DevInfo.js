@@ -96,8 +96,8 @@ const DevInfo = ({ APPDATA }) => {
         <i>I n f o</i>
       </span>
       <div
-        id="infoPane"
-        title="click to hide"
+        id="dev_info"
+        title="click anywhere to hide"
         onClick={toggleLeftUl}
         onMouseLeave={() => {
           setLeftUl(false);
@@ -114,10 +114,12 @@ const DevInfo = ({ APPDATA }) => {
             <strong>Information</strong>
           </u>
           <li>
-            {!APPDATA.NAME ? null : <h1>{APPDATA.NAME}</h1>}
+            {!APPDATA.NAME ? null : (
+              <h1 style={{ marginBottom: 0 }}>{APPDATA.NAME}</h1>
+            )}
             {!APPDATA.VER ? null : 'Ver: ' + APPDATA.VER + ' '}
-            {!APPDATA.PROJECT ? null : (
-              <h3 style={{ margin: 0 }}>{APPDATA.PROJECT}</h3>
+            {!APPDATA.SUFFIX ? null : (
+              <h3 style={{ margin: 0 }}>{APPDATA.SUFFIX}</h3>
             )}
             {!APPDATA.INFO ? null : <i>{APPDATA.INFO}</i>}
             {!APPDATA.DESCRIPTION ? null : <h4>{APPDATA.DESCRIPTION}</h4>}

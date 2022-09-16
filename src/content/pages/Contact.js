@@ -30,12 +30,12 @@ function Contact({ APPDATA }) {
         <div className="contact_right">
           <div>
             <img
-              className="contact_pic"
+              className="contact_right_pic"
               alt="contact-pic"
               src={contact_pic}
             ></img>
           </div>
-          <div>
+          <div className="contact_right_info">
             <span>
               <p>
                 • Opening Hours: 8 am – 11 pm
@@ -51,15 +51,15 @@ function Contact({ APPDATA }) {
                 <br />• Address:
               </p>
               <div className="address">
-                <a href="https://goo.gl/maps/VtddMzD22ro1DAyU8">
-                  <button className="buttons location">
+                <button className="buttons location">
+                  <a href="https://goo.gl/maps/VtddMzD22ro1DAyU8">
                     <img
                       height="48px"
                       src={location_icon}
                       alt="location_icon"
                     ></img>
-                  </button>
-                </a>
+                  </a>
+                </button>
                 <p>
                   Villa 1, Street 12A, Plot 357 - 546,
                   <br />

@@ -19,6 +19,7 @@ function Home({ APPDATA }) {
 
   const unMute = () => {
     vidRef.current.muted = false;
+    vidRef.current.play();
   };
 
   const handlePlayVideo = () => {
