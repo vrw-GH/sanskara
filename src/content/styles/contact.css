@@ -21,14 +21,14 @@
 }
 
 .contact_left h1 {
-  font-size : 3rem;
+  font-size : calc(1.1rem + 3vw);
   margin    : 1rem 0 1rem;
   text-align: left;
   color     : #ffffff;
 }
 
 .contact_left i {
-  font-size: 2rem;
+  font-size: calc(.8rem + 2vw);
 }
 
 input {
@@ -81,7 +81,7 @@ input::placeholder {
 }
 
 .contact_right_info {
-  font-size: calc(0.5rem + 2vw);
+  font-size: calc(0.8rem + 1vw);
 }
 
 .contact_right p {

@@ -68,7 +68,7 @@ export const APPDATA = {
 
   BACKEND: process.env.REACT_APP_BACKEND || 'http://127.0.0.1:5000',
 
-  MODE: process.env.REACT_APP_PROJECT_FLIGHT || process.env.NODE_ENV || 'Dev',
+  MODE: process.env.REACT_APP_SUFFIX || process.env.NODE_ENV || 'Dev',
 
   ROOT: process.env.REACT_APP_FRONTEND || '../',
 

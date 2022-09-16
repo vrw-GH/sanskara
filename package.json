@@ -1,13 +1,13 @@
 {
   "name": "sanskara",
   "version": "1.0.0",
-  "suffix": "victors-cra-app",
-  "info": "please update info",
+  "suffix": "- pre-flight -",
+  "info": "Initial release (still in development)",
   "\\homepage": "https://vrw-gh.github.io/sanskara/",
   "private": false,
   "type": "module",
   "license": "ISC",
-  "description": "please update description",
+  "description": "Landing Page for Sanskara Website\n with a Contact Registration by email (emailJS).",
   "author": "Victor Wright",
   "keywords": [
     "react",

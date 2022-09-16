@@ -19,14 +19,14 @@
 }
 
 .about_left h1 {
-  font-size : 3rem;
+  font-size : calc(1.1rem + 3vw);
   margin    : 0 0 1rem;
   text-align: left;
   color     : #ffffff;
 }
 
 #about_description {
-  font-size : 1.5rem;
+  font-size : calc(0.8rem + 1vw);
   text-align: left;
   color     : #564141;
 }
