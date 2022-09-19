@@ -49,11 +49,11 @@ export const Gallery2 = () => {
       onRequestChange={setActiveSlideIndex}
       itemsToShow={1}
       itemsToScroll={1}
-      delay={10}
+      delay={800}
       centerMode={true}
       showSlidesBeforeInit={false}
       autoplay={true}
-      speed={4000}
+      speed={3000}
       infinite={true}
       easing="ease-in-out"
       containerProps={{ className: 'about_carousel' }}
