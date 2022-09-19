@@ -1,16 +1,14 @@
 .contact_left {
-  /* border   : 1px red dashed; */
-  display               : block;
-  position              : relative;
-  /* min-width          : min-content; */
-  max-width             : min-content;
-  width                 : 100%;
-  padding-right         : 20px;
-  left                  : -1000px;
-  visibility            : hidden;
-  animation             : left-fly-in 1s ease-in-out;
-  animation-delay       : 0.1s;
-  animation-fill-mode   : forwards;
+  /* border             : 1px red dashed; */
+  flex               : auto;
+  position           : relative;
+  width              : 40%;
+  padding-right      : 20px;
+  left               : -1000px;
+  visibility         : hidden;
+  animation          : left-fly-in 1s ease-in-out;
+  animation-delay    : 0.1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes left-fly-in {
@@ -31,7 +29,11 @@
   font-size: calc(.8rem + 2vw);
 }
 
-input {
+.contact_left p {
+  margin: 30px 0 10px;
+}
+
+.contact_left input {
   font-size       : 1.5rem;
   width           : calc(90%);
   text-align      : left;
@@ -42,26 +44,24 @@ input {
   background-color: antiquewhite;
 }
 
-input:focus {
+.contact_left input:focus {
   background-color: white;
 }
 
-input::placeholder {
+.contact_left input::placeholder {
   color: lightgrey;
 }
 
 .contact_right {
-  /* border                : 1px green dashed; */
-  position              : relative;
-  display               : inline-block;
-  /* min-width          : min-content; */
-  max-width             : min-content;
-  width                 : 100%;
-  left                  : 1000px;
-  visibility            : hidden;
-  animation             : right-fly-in 1s ease-in-out;
-  animation-delay       : 0.1s;
-  animation-fill-mode   : forwards;
+  /* border                      : 1px green dashed; */
+  flex               : auto;
+  position           : relative;
+  width              : 55%;
+  left               : 1000px;
+  visibility         : hidden;
+  animation          : right-fly-in 1s ease-in-out;
+  animation-delay    : 0.1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes right-fly-in {

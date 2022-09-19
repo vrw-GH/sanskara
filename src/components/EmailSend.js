@@ -84,20 +84,22 @@ const EmailContactForm = () => {
           disabled={btnTxt === 'Submit' ? false : true}
         ></input>
       </p>
-      <button
-        type="reset"
-        className="buttons secondary"
-        onClick={() => setBtnTxt('Submit')}
-      >
-        Reset
-      </button>
-      <button
-        type="submit"
-        className="buttons primary"
-        disabled={btnTxt === 'Submit' ? false : true}
-      >
-        {btnTxt}
-      </button>
+      <div className="buttons_div">
+        <button
+          type="submit"
+          className="buttons primary"
+          disabled={btnTxt === 'Submit' ? false : true}
+        >
+          {btnTxt}
+        </button>
+        <button
+          type="reset"
+          className="buttons secondary"
+          onClick={() => setBtnTxt('Submit')}
+        >
+          Reset
+        </button>
+      </div>
       {/* <i>{sent}</i> */}
     </form>
   );

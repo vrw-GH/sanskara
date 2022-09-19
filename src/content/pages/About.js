@@ -42,7 +42,6 @@ function About({ APPDATA }) {
           </Link>
         </div>
         <div className="about_right">
-          {/* <img className="about_pic" alt="about-pic" src={about_pic1}></img> */}
           <Gallery />
         </div>
       </div>
