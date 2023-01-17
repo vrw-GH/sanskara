@@ -126,18 +126,22 @@ const DevInfo = ({ APPDATA }) => {
           </li>
           <li>
             <>
-              {!APPDATA.DEVTEAM ? null : 'Team: ' + APPDATA.DEVTEAM}
-              <br />
+              {!APPDATA.DEVTEAM ? null : (
+                <>
+                  Team: <a href={APPDATA.TEAMWEB}target="_blank" rel="noreferrer" title="Visit Webpage"><b>{APPDATA.DEVTEAM}</b></a>
+                  <br />
+                  </>
+              )}              
               {!APPDATA.DEVLEAD ? null : (
                 <small>
-                  Lead Developer: <b>{APPDATA.DEVLEAD}</b>
+                  Lead Developer: <a href={APPDATA.LEADWEB}target="_blank" rel="noreferrer" title="Visit Profile"><b>{APPDATA.DEVLEAD}</b></a>
                   <br />
                 </small>
               )}
               {!APPDATA.REPO.page ? null : (
                 <>
-                  Repo:{' '}
-                  <a href={APPDATA.REPO.page}>
+                  Repo: <a href={APPDATA.REPO.page} 
+                  target="_blank" rel="noreferrer" title="Visit Repository">
                     <small>{APPDATA.REPO.page}</small>
                   </a>
                   <br />

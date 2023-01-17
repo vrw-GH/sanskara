@@ -40,10 +40,12 @@ export const APPDATA = {
   //---------------------------------------
   //* REACT_APP_DEV_TEAM
   DEVTEAM: process.env.REACT_APP_DEV_TEAM || '',
+  TEAMWEB: process.env.REACT_APP_DEV_TEAMWEB || '',
 
   //* REACT_APP_DEV_LEAD
   DEVLEAD:
     process.env.REACT_APP_DEV_AUTHOR || PKGDATA.author || 'Victor Wright',
+  LEADWEB: process.env.REACT_APP_DEV_LEADWEB || 'https://vrw-gh.github.io/vrw-GH',
 
   //* REACT_APP_DEV_EMAIL
   EMAIL: process.env.REACT_APP_DEV_EMAIL || 'developer@wrightsdesk.com',

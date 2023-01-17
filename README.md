@@ -1,4 +1,5 @@
 # Sanskara Landing Page
+
 <div align="center">
 <h2>Front End Web App</h2>
 <p><strong>Landing page with basic email "registering" - (email home)</strong>
@@ -13,8 +14,8 @@
 >> • Follows client scope document<br>
 >> • 2/3 page animation effects on loading<br>
 >> • Email functionality <br>
->>   ≈ Developer email - own backend API (PHP)<br>
->>   ≈ Client email - emailjs / ~~MailChimp~~<br>
+>> ≈ Developer email - [own backend API (PHP)](https://vrw-gh.github.io/php-emailer/)<br>
+>> ≈ Client email - emailjs / ~~MailChimp~~<br>
 <hr />
 <b>Deployments :</b>
 <!-- <br>
