@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4fdfcb76.css",
+    "main.js": "./static/js/main.7b600119.js",
+    "static/media/about2.png": "./static/media/about2.1a6299fe32bbdb8647e7.png",
+    "static/media/about3.png": "./static/media/about3.ad784ff3003efe97d353.png",
+    "static/media/contact.png": "./static/media/contact.9ad70611ce97f19a40c4.png",
+    "static/media/sanskara.mp4": "./static/media/sanskara.86da0cf0764a37c05516.mp4",
+    "static/media/about1.jpg": "./static/media/about1.e90978ae12517135a82e.jpg",
+    "static/media/logo-sanskara-tp.png": "./static/media/logo-sanskara-tp.d13bac0e53130ec90c6d.png",
+    "static/media/frame0601.png": "./static/media/frame0601.2fa8e5a40aae949cd21d.png",
+    "static/media/Marcellus-Regular.ttf": "./static/media/Marcellus-Regular.379c0e43574baa7d41e9.ttf",
+    "static/media/location.svg": "./static/media/location.4ede55d2e7919eccbfd90982679c774f.svg",
+    "static/media/instagram.svg": "./static/media/instagram.f7445446387d6caebf6fecbc61a2d9de.svg",
+    "index.html": "./index.html",
+    "static/media/join.svg": "./static/media/join.bb17ce782bd40495ab3ddd504d7f8861.svg",
+    "static/media/youtube.svg": "./static/media/youtube.7f4cdfacde8ccbd90dc0928aff24af16.svg",
+    "main.4fdfcb76.css.map": "./static/css/main.4fdfcb76.css.map",
+    "main.7b600119.js.map": "./static/js/main.7b600119.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fdfcb76.css",
+    "static/js/main.7b600119.js"
+  ]
+}
